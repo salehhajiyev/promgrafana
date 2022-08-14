@@ -1,0 +1,1356 @@
+<!doctype html>
+<html class="no-js" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <link rel="apple-touch-icon" href="https://adamtheautomator.com/wp-content/themes/adam-the-automator/assets/images/logos_favicons/apple-touch-icon.png" />
+    <link rel="mask-icon" color="#da532c" href="https://adamtheautomator.com/wp-content/themes/adam-the-automator/assets/images/logos_favicons/safari-pinned-tab.svg" />
+    <link rel="shortcut icon" sizes="16x16" href="https://adamtheautomator.com/wp-content/themes/adam-the-automator/assets/images/logos_favicons/favicon-16x16.png" />
+    <link rel="shortcut icon" sizes="32x32" href="https://adamtheautomator.com/wp-content/themes/adam-the-automator/assets/images/logos_favicons/favicon-32x32.png" />
+    <link rel="shortcut icon" sizes="48x48" href="https://adamtheautomator.com/wp-content/themes/adam-the-automator/assets/images/logos_favicons/favicon-48x48.png" />
+    <link rel="shortcut icon" type="image/svg+xml" href="https://adamtheautomator.com/wp-content/themes/adam-the-automator/assets/images/logos_favicons/ata-logo-gear.svg" />
+    <link rel="manifest" type="application/json" crossorigin="use-credentials" href="https://adamtheautomator.com/wp-content/themes/adam-the-automator/manifest.json" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="https://adamtheautomator.com/wp-content/themes/adam-the-automator/browserconfig.xml" />
+    <meta name="theme-color" content="#f1f5f9">
+
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
+    
+    
+        <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K6C7SP6');</script>
+    <!-- End Google Tag Manager -->
+        
+            <link rel="preload" as="image" href="https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring-768x432.jpg">
+            <link rel="preload" as="image" href="https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring-768x432.jpg" media="(min-width: 768px)">
+            <link rel="preload" as="image" href="https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring-1024x576.jpg" media="(min-width: 1280px)">
+        <script>!function(){"use strict";for(var t=window.location.search.substring(1).split("&"),e=0;e<t.length;e++){var i="adt_ei",a=t[e];if(0===a.indexOf(i)){var r=a.split(i+"=")[1];localStorage.setItem(i,r),t.splice(e,1),history.replaceState(null,"","?"+t.join("&"));break}}}();
+</script><style data-no-optimize="1" data-cfasync="false">
+	.adthrive-ad {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+		overflow-x: visible;
+		clear: both;
+		line-height: 0;
+	}
+	.adthrive-home-ad {
+margin-top:15px;
+margin-bottom:15px;
+}
+
+.adthrive-sidebar.adthrive-stuck {
+margin-top: 5px;
+}
+
+.adthrive-wrapper-title-wrapper svg {
+  vertical-align: middle !important;
+  display: initial;
+}
+
+iframe[id^="google_ads_iframe"] {
+  display: initial;
+  vertical-align: initial;
+}
+
+/* adjust video player size */
+.adthrive-player-container {
+  max-width: 500px;
+}
+body.adthrive-device-desktop div[id^="cls-video"],
+body.adthrive-device-tablet div[id^="cls-video"] {
+min-height: 302px!important;
+}
+body.adthrive-device-phone div[id^="cls-video"] {
+min-height: 210px!important;
+}
+/* END adjust video player size */
+
+.adthrive-sidebar-9 {
+  min-width: 300px;
+}
+
+body.blog .adthrive-content,
+body.archive.bg-slate-100 .adthrive-content{
+  grid-column: 1 / -1;
+}</style>
+<script data-no-optimize="1" data-cfasync="false">
+	window.adthriveCLS = {
+		enabledLocations: ['Content', 'Recipe'],
+		injectedSlots: [],
+		injectedFromPlugin: true,
+		branch: '9920373',bucket: 'prod',			};
+	window.adthriveCLS.siteAds = {"siteId":"5e85f4e7732dec2bfd7ee752","siteName":"Adam the Automator","targeting":[{"value":"5e85f4e7732dec2bfd7ee752","key":"siteId"},{"value":"Adam the Automator","key":"siteName"},{"value":"AdThrive Edge","key":"service"},{"value":"on","key":"bidding"},{"value":["Tech"],"key":"verticals"}],"breakpoints":{"tablet":768,"desktop":1024},"adUnits":[{"sequence":1,"targeting":[{"value":["Sidebar"],"key":"location"}],"devices":["desktop"],"name":"Sidebar_1","sticky":false,"location":"Sidebar","dynamic":{"pageSelector":"","spacing":0,"max":1,"lazy":false,"lazyMax":null,"elementSelector":"article.post > .mb-12 > *, .main .w-full.mt-0 > *","skip":0,"classNames":[],"position":"afterend","every":1,"enabled":true},"adSizes":[[160,600],[336,280],[320,50],[300,600],[250,250],[1,1],[320,100],[300,1050],[300,50],[300,420],[300,250]],"priority":299,"autosize":true},{"sequence":9,"targeting":[{"value":["Sidebar"],"key":"location"},{"value":true,"key":"sticky"}],"devices":["desktop"],"name":"Sidebar_9","sticky":true,"location":"Sidebar","dynamic":{"pageSelector":"","spacing":0,"max":1,"lazy":false,"lazyMax":null,"elementSelector":"article.post > .mb-12, .main .w-full.mt-0","skip":0,"classNames":[],"position":"beforeend","every":1,"enabled":true},"stickyOverlapSelector":"footer#footer","adSizes":[[300,250],[250,250],[300,600],[120,240],[160,600],[300,1050],[336,280],[320,50],[320,100],[1,1],[300,420],[300,50]],"priority":291,"autosize":true},{"sequence":9,"targeting":[{"value":["Sidebar"],"key":"location"},{"value":true,"key":"sticky"}],"devices":["desktop"],"name":"Sidebar_9","sticky":true,"location":"Sidebar","dynamic":{"pageSelector":"","spacing":0,"max":1,"lazy":false,"lazyMax":null,"elementSelector":".sidebar-facet","skip":0,"classNames":[],"position":"afterend","every":1,"enabled":true},"stickyOverlapSelector":"footer#footer","adSizes":[[160,600],[336,280],[320,50],[300,600],[250,250],[1,1],[320,100],[300,1050],[300,50],[300,420],[300,250]],"priority":291,"autosize":true},{"sequence":null,"targeting":[{"value":["Content"],"key":"location"}],"devices":["desktop"],"name":"Content","sticky":false,"location":"Content","dynamic":{"pageSelector":"body.single, body.page","spacing":1,"max":8,"lazy":true,"lazyMax":5,"elementSelector":".article-content > *:not(style):not(h2), .article__content > *:not(style):not(h2)","skip":8,"classNames":[],"position":"afterend","every":1,"enabled":true},"adSizes":[[728,90],[336,280],[320,50],[468,60],[970,90],[250,250],[1,1],[320,100],[970,250],[1,2],[300,50],[300,300],[552,334],[728,250],[300,250]],"priority":199,"autosize":true},{"sequence":null,"targeting":[{"value":["Content"],"key":"location"}],"devices":["tablet"],"name":"Content","sticky":false,"location":"Content","dynamic":{"pageSelector":"body.single, body.page","spacing":0.7,"max":6,"lazy":true,"lazyMax":9,"elementSelector":".article-content > *:not(style):not(h2), .article__content > *:not(style):not(h2)","skip":8,"classNames":[],"position":"afterend","every":1,"enabled":true},"adSizes":[[728,90],[336,280],[320,50],[468,60],[970,90],[250,250],[1,1],[320,100],[970,250],[1,2],[300,50],[300,300],[552,334],[728,250],[300,250]],"priority":199,"autosize":true},{"sequence":null,"targeting":[{"value":["Content"],"key":"location"}],"devices":["phone"],"name":"Content","sticky":false,"location":"Content","dynamic":{"pageSelector":"body.single, body.page","spacing":1,"max":5,"lazy":true,"lazyMax":7,"elementSelector":".article-content > *:not(style):not(h2), .article__content > *:not(style):not(h2)","skip":8,"classNames":[],"position":"afterend","every":1,"enabled":true},"adSizes":[[728,90],[336,280],[320,50],[468,60],[970,90],[250,250],[1,1],[320,100],[970,250],[1,2],[300,50],[300,300],[552,334],[728,250],[300,250]],"priority":199,"autosize":true},{"sequence":null,"targeting":[{"value":["Content"],"key":"location"}],"devices":["desktop","tablet","phone"],"name":"Content","sticky":false,"location":"Content","dynamic":{"pageSelector":"body.archive.bg-slate-100","spacing":0,"max":5,"lazy":true,"lazyMax":5,"elementSelector":".facetwp-template > div.post","skip":2,"classNames":[],"position":"afterend","every":1,"enabled":true},"adSizes":[[468,60],[728,90],[970,90],[1,1],[300,50],[728,250],[970,250],[1,2]],"priority":199,"autosize":true},{"sequence":null,"targeting":[{"value":["Below Post"],"key":"location"}],"devices":["tablet","desktop"],"name":"Below_Post","sticky":false,"location":"Below Post","dynamic":{"pageSelector":"body.single, body.page","spacing":0,"max":0,"lazy":true,"lazyMax":1,"elementSelector":".jp-relatedposts","skip":0,"classNames":[],"position":"beforebegin","every":1,"enabled":true},"adSizes":[[728,90],[336,280],[320,50],[468,60],[250,250],[1,1],[320,100],[300,250],[970,250],[728,250]],"priority":99,"autosize":true},{"sequence":null,"targeting":[{"value":["Footer"],"key":"location"},{"value":true,"key":"sticky"}],"devices":["tablet","phone","desktop"],"name":"Footer","sticky":true,"location":"Footer","dynamic":{"pageSelector":"","spacing":0,"max":1,"lazy":false,"lazyMax":null,"elementSelector":"body","skip":0,"classNames":[],"position":"beforeend","every":1,"enabled":true},"adSizes":[[320,50],[320,100],[728,90],[970,90],[468,60],[1,1],[300,50]],"priority":-1,"autosize":true}],"adDensityLayout":{"mobile":{"adDensity":0.26,"onePerViewport":false},"pageOverrides":[],"desktop":{"adDensity":0.26,"onePerViewport":false}},"adDensityEnabled":true,"siteExperiments":[],"adTypes":{"nativeMobileRecipe":true,"expandableFooter":true,"nativeDesktopSidebar":true,"nativeDesktopContent":true,"outstreamDesktop":true,"interscroller":true,"miniscroller":true,"nativeDesktopRecipe":true,"outstreamMobile":true,"animatedFooter":true,"nativeMobileContent":true},"adOptions":{"theTradeDesk":true,"verizon":true,"undertone":true,"concert":false,"footerCloseButton":true,"teads":true,"pmp":true,"districtM":true,"thirtyThreeAcross":true,"sharethrough":true,"removeVideoTitleWrapper":true,"pubMatic":true,"roundel":true,"infiniteScroll":false,"yahoossp":true,"sonobi":true,"yieldmo":true,"footerSelector":"","amazonUAM":true,"gamMCMEnabled":true,"gamMCMChildNetworkCode":"22509993567","stickyContainerAds":false,"rubiconMediaMath":true,"rubicon":true,"conversant":true,"deepIntent":true,"openx":true,"mobileHeaderHeight":1,"unruly":true,"mediaGrid":true,"bRealTime":true,"gumgum":true,"comscoreFooter":true,"desktopInterstitial":false,"footerCloseButtonDesktop":false,"isAutoOptimized":false,"comscoreTAL":true,"brightroll":true,"targetaff":false,"advancePlaylistOptions":{"playlistPlayer":{"enabled":true},"relatedPlayer":{"enabled":true,"applyToFirst":true}},"kargo":true,"liveRampATS":true,"footerCloseButtonMobile":false,"allowSmallerAdSizes":true,"comscore":"Tech","mobileInterstitial":false,"tripleLift":true,"sensitiveCategories":["alcohol","consumer loans","cosmetic procedures and body modification","dating","downloadable utilities","drugs and supplements","games, video, casual","skin exposure","tobacco","weight loss"],"liveRamp":true,"mobileInterstitialBlockedPageSelectors":"","adthriveEmailIdentity":true,"nativo":true,"criteo":true,"infiniteScrollOptions":{"selector":"","heightThreshold":0},"clsOptimizedAds":true,"colossus":true,"verticals":["Tech"],"inImage":false,"advancePlaylist":true,"delayLoading":true,"inImageZone":null,"appNexus":true,"liveRampId":"","infiniteScrollRefresh":false,"indexExchange":true,"stickyOutstream":{"mobile":{"enabled":false},"desktop":{"enabled":false},"allowForPageWithStickyPlayer":{"enabled":false}}},"videoPlayers":{"contextual":{"autoplayCollapsibleEnabled":true,"overrideEmbedLocation":false,"defaultPlayerType":"collapse"},"videoEmbed":"wordpress","footerSelector":"#footer","players":[{"devices":["desktop","mobile"],"description":"","id":4065719,"title":"Stationary related player - desktop and mobile","type":"stationaryRelated","enabled":true,"playerId":"ikjgg1Av"},{"playlistId":"","pageSelector":"","devices":["desktop"],"description":"","skip":6,"title":"","type":"stickyRelated","enabled":true,"elementSelector":".article-content > *:not(style):not(h2), .article__content > *:not(style):not(h2)","id":4065720,"position":"afterend","saveVideoCloseState":false,"shuffle":false,"playerId":"ikjgg1Av"},{"playlistId":"","pageSelector":"","devices":["mobile"],"mobileLocation":"top-center","description":"","skip":6,"title":"","type":"stickyRelated","enabled":true,"elementSelector":".article-content > *:not(style):not(h2), .article__content > *:not(style):not(h2)","id":4065721,"position":"afterend","saveVideoCloseState":false,"shuffle":false,"mobileHeaderSelector":null,"playerId":"ikjgg1Av"},{"playlistId":"mPEH5Ms8","pageSelector":"body.single, body.page","devices":["desktop"],"description":"","skip":6,"title":"My Latest Videos","type":"stickyPlaylist","enabled":true,"footerSelector":"#footer","elementSelector":".article-content > *:not(style):not(h2), .article__content > *:not(style):not(h2)","id":4065722,"position":"afterend","saveVideoCloseState":false,"shuffle":true,"playerId":"jjaZt7HA","isCompleted":true},{"playlistId":"mPEH5Ms8","pageSelector":"","devices":["desktop"],"description":"","elementSelector":"","skip":0,"id":4065724,"position":"afterend","title":"","type":"sekindo","enabled":false,"playerId":""},{"playlistId":"mPEH5Ms8","pageSelector":"body.single","devices":["mobile"],"mobileLocation":"top-center","description":"","skip":6,"title":"My Latest Video","type":"stickyPlaylist","enabled":true,"footerSelector":"#footer","elementSelector":".article-content > *:not(style):not(h2), .article__content > *:not(style):not(h2)","id":4065723,"position":"afterend","saveVideoCloseState":false,"shuffle":true,"mobileHeaderSelector":null,"playerId":"jjaZt7HA"},{"playlistId":"mPEH5Ms8","pageSelector":"","devices":["mobile"],"description":"","elementSelector":"","skip":0,"id":4065725,"position":"afterend","title":"","type":"sekindo","enabled":false,"playerId":""}],"partners":{"roundel":true,"yahoossp":true,"oneVideo":true,"criteo":true,"mediaGrid":true,"gumgum":true,"telaria":true,"colossus":true,"districtM":true,"amazonUAM":true,"kargo":true,"thirtyThreeAcross":true,"stickyOutstream":{"mobile":{"enabled":false},"desktop":{"enabled":false},"blockedPageSelectors":"","allowForPageWithStickyPlayer":{"enabled":false}},"sharethrough":true,"rubicon":true,"appNexus":true,"conversant":true,"tripleLift":true,"openx":true,"pubMatic":true,"spotx":true,"indexExchange":true}}};</script>
+
+<script data-no-optimize="1" data-cfasync="false">
+(function(w, d) {
+	w.adthrive = w.adthrive || {};
+	w.adthrive.cmd = w.adthrive.cmd || [];
+	w.adthrive.plugin = 'adthrive-ads-2.2.1';
+	w.adthrive.host = 'ads.adthrive.com';
+	w.adthrive.integration = 'plugin';
+
+	var commitParam = (w.adthriveCLS && w.adthriveCLS.bucket !== 'prod' && w.adthriveCLS.branch) ? '&commit=' + w.adthriveCLS.branch : '';
+
+	var s = d.createElement('script');
+	s.async = true;
+	s.referrerpolicy='no-referrer-when-downgrade';
+	s.src = 'https://' + w.adthrive.host + '/sites/5e85f4e7732dec2bfd7ee752/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href) + commitParam + '&cb=' + (Math.floor(Math.random() * 100) + 1) + '';
+	var n = d.getElementsByTagName('script')[0];
+	n.parentNode.insertBefore(s, n);
+})(window, document);
+</script>
+
+<!-- Search Engine Optimization by Rank Math PRO - https://s.rankmath.com/home -->
+<title>The Essential Guide to Grafana Docker Monitoring</title>
+<meta name="description" content="Learn the essentials of monitoring your Docker runtime using Prometheus along with Grafana Docker containers in this ATA Learning tutorial!"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://adamtheautomator.com/grafana-docker/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Essential Guide to Grafana Docker Monitoring" />
+<meta property="og:description" content="Learn the essentials of monitoring your Docker runtime using Prometheus along with Grafana Docker containers in this ATA Learning tutorial!" />
+<meta property="og:url" content="https://adamtheautomator.com/grafana-docker/" />
+<meta property="og:site_name" content="ATA Learning" />
+<meta property="article:tag" content="Docker" />
+<meta property="article:tag" content="Grafana" />
+<meta property="article:tag" content="Prometheus" />
+<meta property="article:tag" content="Ubuntu Linux" />
+<meta property="article:section" content="IT Ops" />
+<meta property="og:updated_time" content="2022-06-10T04:30:03-05:00" />
+<meta property="og:image" content="https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring.jpg" />
+<meta property="og:image:secure_url" content="https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="675" />
+<meta property="og:image:alt" content="grafana docker" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2022-05-17T09:00:00-05:00" />
+<meta property="article:modified_time" content="2022-06-10T04:30:03-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Essential Guide to Grafana Docker Monitoring" />
+<meta name="twitter:description" content="Learn the essentials of monitoring your Docker runtime using Prometheus along with Grafana Docker containers in this ATA Learning tutorial!" />
+<meta name="twitter:creator" content="@eshiettjoseph" />
+<meta name="twitter:image" content="https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Joseph Eshiett" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="12 minutes" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://adamtheautomator.com/#organization","name":"ATA Learning","url":"https://adamtheautomator.com","logo":{"@type":"ImageObject","@id":"https://adamtheautomator.com/#logo","url":"https://adamtheautomator.com/wp-content/uploads/2022/02/android-chrome-512x512-1.png","caption":"ATA Learning","inLanguage":"en-US","width":"512","height":"512"}},{"@type":"WebSite","@id":"https://adamtheautomator.com/#website","url":"https://adamtheautomator.com","name":"ATA Learning","publisher":{"@id":"https://adamtheautomator.com/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring.jpg","url":"https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring.jpg","width":"1200","height":"675","caption":"grafana docker","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://adamtheautomator.com/grafana-docker/#webpage","url":"https://adamtheautomator.com/grafana-docker/","name":"The Essential Guide to Grafana Docker Monitoring","datePublished":"2022-05-17T09:00:00-05:00","dateModified":"2022-06-10T04:30:03-05:00","isPartOf":{"@id":"https://adamtheautomator.com/#website"},"primaryImageOfPage":{"@id":"https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring.jpg"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://adamtheautomator.com/author/joseph-eshiett/","name":"Joseph Eshiett","url":"https://adamtheautomator.com/author/joseph-eshiett/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/d6969082be3d78afe0563b6d462d1e7e?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/d6969082be3d78afe0563b6d462d1e7e?s=96&amp;d=mm&amp;r=g","caption":"Joseph Eshiett","inLanguage":"en-US"},"sameAs":["https://twitter.com/eshiettjoseph"],"worksFor":{"@id":"https://adamtheautomator.com/#organization"}},{"@type":"Article","headline":"The Essential Guide to Grafana Docker Monitoring","keywords":"grafana docker","datePublished":"2022-05-17T09:00:00-05:00","dateModified":"2022-06-10T04:30:03-05:00","author":{"@id":"https://adamtheautomator.com/author/joseph-eshiett/"},"publisher":{"@id":"https://adamtheautomator.com/#organization"},"description":"Learn the essentials of monitoring your Docker runtime using Prometheus along with Grafana Docker containers in this ATA Learning tutorial!","name":"The Essential Guide to Grafana Docker Monitoring","@id":"https://adamtheautomator.com/grafana-docker/#richSnippet","isPartOf":{"@id":"https://adamtheautomator.com/grafana-docker/#webpage"},"image":{"@id":"https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring.jpg"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://adamtheautomator.com/grafana-docker/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link id='omgf-preload-0' rel='preload' href='https://adamtheautomator.com/wp-content/uploads/omgf/google-fonts/poppins-normal-400.woff2' as='font' type='font/woff2' crossorigin />
+<link id='omgf-preload-1' rel='preload' href='https://adamtheautomator.com/wp-content/uploads/omgf/google-fonts/poppins-normal-600.woff2' as='font' type='font/woff2' crossorigin />
+<link id='omgf-preload-2' rel='preload' href='https://adamtheautomator.com/wp-content/uploads/omgf/google-fonts/poppins-normal-700.woff2' as='font' type='font/woff2' crossorigin />
+<link id='omgf-preload-3' rel='preload' href='https://adamtheautomator.com/wp-content/uploads/omgf/google-fonts-css/poppins-normal-400.woff2' as='font' type='font/woff2' crossorigin />
+<link id='omgf-preload-4' rel='preload' href='https://adamtheautomator.com/wp-content/uploads/omgf/google-fonts-css/poppins-normal-600.woff2' as='font' type='font/woff2' crossorigin />
+<link id='omgf-preload-5' rel='preload' href='https://adamtheautomator.com/wp-content/uploads/omgf/google-fonts-css/poppins-normal-700.woff2' as='font' type='font/woff2' crossorigin />
+<link rel='stylesheet' id='jetpack_related-posts-css'  href='https://adamtheautomator.com/wp-content/plugins/jetpack/modules/related-posts/related-posts.css?ver=20211209' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://adamtheautomator.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.1' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='mediaelement-css'  href='https://adamtheautomator.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://adamtheautomator.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.0.1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="mkaz-code-syntax-prism-css" href="https://adamtheautomator.com/wp-content/plugins/code-syntax-block/assets/prism-a11y-dark.css?ver=1657131030" type="text/css" media="print" onload="this.media='all'" /><link rel='stylesheet' id='novashare-css-css'  href='https://adamtheautomator.com/wp-content/plugins/novashare/css/style.min.css?ver=1.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='pwp-offline-style-css'  href='https://adamtheautomator.com/wp-content/plugins/progressive-wp/assets/styles/ui-offline.css?ver=2.1.13' type='text/css' media='all' />
+<link rel='stylesheet' id='mailchimp-top-bar-css'  href='https://adamtheautomator.com/wp-content/plugins/mailchimp-top-bar/assets/css/bar.css?ver=1.5.5' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<link rel='stylesheet' id='google-fonts-css'  href='https://adamtheautomator.com/wp-content/uploads/omgf/google-fonts/google-fonts.css?ver=1647264412' type='text/css' media='all' />
+<link rel='stylesheet' id='production-css'  href='https://adamtheautomator.com/wp-content/themes/adam-the-automator/assets/css/compiled/styles.min.css?ver=2022.08.09.051100' type='text/css' media='all' />
+<script type='text/javascript' id='jetpack_related-posts-js-extra'>
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?ver=20211209' id='jetpack_related-posts-js' defer></script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/plugins/novashare/js/novashare.min.js?ver=1.3.2' id='novashare-js-js' defer></script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/themes/adam-the-automator/assets/js/compiled/js.cookie.min.js?ver=3.0.1' id='cookiejs-js' defer></script>
+<script type='text/javascript' id='dummy-handle-mailchimp-top-bar-js-after'>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (!!document.querySelector("#mailchimp-top-bar")) {
+      const offsetHeight = document.querySelector('.article__content').offsetHeight * 0.75;
+
+      document.querySelector("#mailchimp-top-bar").style.display = 'none';
+
+      const options = {
+        threshold: 0,
+        rootMargin: `${offsetHeight}px`
+      };
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const intersecting = entry.isIntersecting;
+
+          if (intersecting && Cookies.get('mctb_bar_hidden') !== 'hidden' && Cookies.get('mctb_bar_hidden') !== 'used') {
+            document.querySelector("#mailchimp-top-bar").style.display = 'flex';
+            document.querySelector(".ez-toc-title").classList.add('mt-20');
+          }
+        })
+      }, options);
+
+      observer.observe(document.querySelector('.article__footer'));
+
+      const observerTop = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const intersecting = entry.isIntersecting;
+
+          if (intersecting && Cookies.get('mctb_bar_hidden') !== 'hidden' && Cookies.get('mctb_bar_hidden') !== 'used') {
+            document.querySelector("#mailchimp-top-bar").style.position = 'absolute';
+            document.querySelector("#mailchimp-top-bar").style.top = '56px';
+          } else {
+            if (Cookies.get('mctb_bar_hidden') !== 'hidden' && Cookies.get('mctb_bar_hidden') !== 'used') {
+              document.querySelector("#mailchimp-top-bar").style.position = 'fixed';
+              document.querySelector("#mailchimp-top-bar").style.top = '0';
+            } else {
+              document.querySelector("#mailchimp-top-bar").style.display = 'none';
+            }
+          }
+        })
+      });
+
+      observerTop.observe(document.querySelector('.header-content_top-bar'));
+
+      const observerMobileTop = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const intersecting = entry.isIntersecting;
+
+          if (intersecting && Cookies.get('mctb_bar_hidden') !== 'hidden' && Cookies.get('mctb_bar_hidden') !== 'used') {
+            document.querySelector("#mailchimp-top-bar").style.position = 'absolute';
+            document.querySelector("#mailchimp-top-bar").style.top = '56px';
+          } else {
+            if (Cookies.get('mctb_bar_hidden') !== 'hidden') {
+              document.querySelector("#mailchimp-top-bar").style.position = 'fixed';
+              document.querySelector("#mailchimp-top-bar").style.top = '0';
+            } else {
+              document.querySelector("#mailchimp-top-bar").style.display = 'none';
+            }
+          }
+        })
+      });
+
+      observerMobileTop.observe(document.querySelector('.header-content_top-mobilebar'));
+
+      const mutObserver = new MutationObserver(function(mutations_list) {
+        mutations_list.forEach(function(mutation) {
+          mutation.addedNodes.forEach(function(added_node) {
+            if (added_node.className = 'mtcb-close') {
+              added_node.addEventListener("click", function() {
+                document.querySelector("#mailchimp-top-bar").style.display = 'none';
+              });
+
+              mutObserver.disconnect();
+            }
+          });
+        });
+      });
+
+      mutObserver.observe(document.querySelector("#mailchimp-top-bar"), { subtree: false, childList: true, attributes: true });
+
+      const mutSignupObserver = new MutationObserver(function(mutations_list) {
+        mutations_list.forEach(function(mutation) {
+          if (mutation.attributeName == 'data-animated') {
+            setTimeout(() => { document.querySelector("#mailchimp-top-bar").style.display = 'none'; }, 300);
+
+            mutObserver.disconnect();
+          }
+        });
+      });
+
+      mutSignupObserver.observe(document.querySelector("#mailchimp-top-bar"), { subtree: true, childList: true, attributes: true });
+    }
+  });
+</script>
+<link rel="https://api.w.org/" href="https://adamtheautomator.com/wp-json/" /><link rel="alternate" type="application/json" href="https://adamtheautomator.com/wp-json/wp/v2/posts/15420" /><link rel="alternate" type="application/json+oembed" href="https://adamtheautomator.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fadamtheautomator.com%2Fgrafana-docker%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://adamtheautomator.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fadamtheautomator.com%2Fgrafana-docker%2F&#038;format=xml" />
+<script type='text/javascript'>var PwpJsVars = {"AjaxURL":"https:\/\/adamtheautomator.com\/wp-admin\/admin-ajax.php","homeurl":"https:\/\/adamtheautomator.com\/","installprompt":{"mode":"normal","pageloads":"2","onclick":""}};</script>		<script type="text/javascript" id="serviceworker-unregister">
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.getRegistrations().then(function (registrations) {
+					registrations.forEach(function (registration) {
+						if (registration.active.scriptURL === window.location.origin + '/pwp-serviceworker.js') {
+							registration.unregister();
+						}
+					});
+				});
+			}
+		</script>
+				<script type="text/javascript" id="serviceworker">
+			if (navigator.serviceWorker) {
+				window.addEventListener('load', function () {
+					navigator.serviceWorker.register(
+						"https:\/\/adamtheautomator.com\/?wp_service_worker=1", {"scope": "\/"}
+					);
+				});
+			}
+		</script>
+		<link rel="dns-prefetch" href="https://ads.adthrive.com/"><link rel="preconnect" href="https://ads.adthrive.com/"><link rel="preconnect" href="https://ads.adthrive.com/" crossorigin><style>img#wpstats{display:none}</style>
+	<script type="text/javascript">var postAuthor = "joseph-eshiett";</script><style type="text/css">
+.mctb-bar, .mctb-response, .mctb-close { background: #ffcc00 !important; }
+.mctb-bar, .mctb-label, .mctb-close { color: #222222 !important; }
+.mctb-button { background: #222222 !important; border-color: #222222 !important; }
+.mctb-email:focus { outline-color: #222222 !important; }
+.mctb-button { color: #ffffff !important; }
+</style><script data-no-optimize='1' data-cfasync='false' id='cls-disable-ads-9920373'>var cls_disable_ads=function(t){"use strict";var e=function(t){var e=window.location.href;return t.some((function(t){return new RegExp(t,"i").test(e)}))},i=function(){function t(t){this.adthrive=t,this.all=!1,this.content=!1,this.recipe=!1,this.video=!1,this.locations=new Set,this.reasons=new Set,(this.urlHasEmail(window.location.href)||this.urlHasEmail(window.document.referrer))&&(this.all=!0,this.reasons.add("all_email"));try{this.checkCommandQueue(),null!==document.querySelector(".tag-novideo")&&(this.video=!0,this.locations.add("Video"),this.reasons.add("video_tag"))}catch(t){}}return t.prototype.checkCommandQueue=function(){var t=this;this.adthrive&&this.adthrive.cmd&&this.adthrive.cmd.forEach((function(e){var i=e.toString(),a=t.extractAPICall(i,"disableAds");a&&t.disableAllAds(t.extractPatterns(a));var n=t.extractAPICall(i,"disableContentAds");n&&t.disableContentAds(t.extractPatterns(n));var s=t.extractAPICall(i,"disablePlaylistPlayers");s&&t.disablePlaylistPlayers(t.extractPatterns(s))}))},t.prototype.extractPatterns=function(t){var e=t.match(/\'(.*?)\'/g);if(null!==e)return e.map((function(t){return t.replace(/'/g,"")}))},t.prototype.extractAPICall=function(t,e){var i=new RegExp(e+"\\((.*?)\\)","g"),a=t.match(i);return null!==a&&a[0]},t.prototype.disableAllAds=function(t){t&&!e(t)||(this.all=!0,this.reasons.add("all_page"))},t.prototype.disableContentAds=function(t){t&&!e(t)||(this.content=!0,this.recipe=!0,this.locations.add("Content"),this.locations.add("Recipe"),this.reasons.add("content_plugin"))},t.prototype.disablePlaylistPlayers=function(t){t&&!e(t)||(this.video=!0,this.locations.add("Video"),this.reasons.add("video_page"))},t.prototype.urlHasEmail=function(t){if(!t)return!1;return null!==/([A-Z0-9._%+-]+(@|%(25)*40)[A-Z0-9.-]+\.[A-Z]{2,})/i.exec(t)},t}(),a=window.adthriveCLS;return a&&(a.disableAds=new i(window.adthrive)),t.ClsDisableAds=i,Object.defineProperty(t,"__esModule",{value:!0}),t}({});
+</script>    <script>
+        darkPalette = {
+            accent:           "#E2E8F0",
+            accentText:       "#0F172A",
+            footerHeader:     "#0F172A",
+            footerHeaderText: "#CBD5E1",
+            box:              "#334155",
+            boxText:          "#F1F5F9",
+            boxLightText:     "#CBD5E1",
+            backgroundText:   "#CBD5E1"
+        }
+
+        lightPalette = {
+            accent:           "#334155",
+            accentText:       "#ffffff",
+            footerHeader:     "#e2e8f0",
+            footerHeaderText: "#1e293b",
+            box:              "#ffffff",
+            boxText:          "#475569",
+            boxLightText:     "#334155",
+            backgroundText:   "#334155"
+        }
+
+        var palette = lightPalette;
+
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            palette = darkPalette;
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+            var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+            var themeToggleBtn = document.getElementById('theme-toggle');
+
+            // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                themeToggleLightIcon.classList.remove('hidden');
+            } else {
+                themeToggleDarkIcon.classList.remove('hidden');
+            }
+
+            themeToggleBtn.addEventListener('click', function() {
+                // toggle icons inside button
+                themeToggleDarkIcon.classList.toggle('hidden');
+                themeToggleLightIcon.classList.toggle('hidden');
+
+                // if set via local storage previously
+                if (localStorage.getItem('color-theme')) {
+                    if (localStorage.getItem('color-theme') === 'light') {
+                        document.documentElement.classList.add('dark');
+                        localStorage.setItem('color-theme', 'dark');
+
+                        if (typeof hyvor_talk != "undefined") {
+                            hyvor_talk.setPalette(darkPalette);
+                        }
+                    } else {
+                        document.documentElement.classList.remove('dark');
+                        localStorage.setItem('color-theme', 'light');
+
+                        if (typeof hyvor_talk != "undefined") {
+                            hyvor_talk.setPalette(lightPalette);
+                        }
+                    }
+
+                // if NOT set via local storage previously
+                } else {
+                    if (document.documentElement.classList.contains('dark')) {
+                        document.documentElement.classList.remove('dark');
+                        localStorage.setItem('color-theme', 'light');
+
+                        if (typeof hyvor_talk != "undefined") {
+                            hyvor_talk.setPalette(darkPalette);
+                        }
+                    } else {
+                        document.documentElement.classList.add('dark');
+                        localStorage.setItem('color-theme', 'dark');
+
+                        if (typeof hyvor_talk != "undefined") {
+                            hyvor_talk.setPalette(lightPalette);
+                        }
+                    }
+                }
+
+            });
+        });
+
+        document.addEventListener("facetwp-loaded", function() {
+            if (FWP.loaded) {
+                window.scroll({top: 0, left: 0, behavior: 'smooth'});
+            }
+        });
+    </script>
+</head>
+<body data-rsssl=1 class="post-template-default single single-post postid-15420 single-format-standard wp-embed-responsive flex flex-col justify-center bg-slate-100 dark:bg-slate-800">
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6C7SP6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        <input type="checkbox" id="toggler" class="hidden toggle" />
+<div class="z-50 flex w-full shadow-lg xl:hidden h-[56px] header-content_top-mobilebar">
+    <label for="toggler" class="flex items-center inline-block h-full w-full pl-6 pr-6 text-center no-underline">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="pl-2 pr-2 h-7 fill-current text-slate-800 dark:text-slate-100" role="img" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                <div class="flex ml-auto mr-auto h-full p-0 m-0 items-center justify-center">
+                    <svg class="p-0 m-0 pb-2 pt-2 border-none inline-block" id="svg" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="638.907 429.967 592.185 142.067" width="100%" height="100%" aria-labelledby="logo_title_mobile"><title id="logo_title_mobile">ATA Learning</title><style>#words_ta{fill:#0f172a;}#words_learning_icon_lightbulb{fill:#06b6d4;}#gear_icon{fill:#0f172a;}#gear_a{fill:#e2e8f0;}html.dark #words_ta{fill:#e2e8f0;}html.dark #gear_icon{fill:#e2e8f0;}</style><defs><clipPath id="A"><path d="M638.907 429.967h592.185v142.067H638.907z" /></clipPath></defs><g clip-path="url(#A)"><g id="words_ta"><path d="M775.764 521.877v-55.495h-12.882v-13.37h42.583v13.37h-13.554v55.495h-16.147zm47.939-25.626h9.25l-4.61-30.052-4.64 30.052zm-19.902 25.626l15.018-68.865h19.14l14.85 68.865h-16.102l-2.015-13.202H822.04l-2 13.202h-16.239z" /></g><g id="words_learning_icon_lightbulb"><path d="M894.567 521.877h-35.454v-68.865h16.102v54.961h19.352v13.904zm7.113 0v-68.865h37.47v13.37h-21.46v12.653h19.811v13.813H917.69v15.033h21.46v13.996h-37.47zm62.378-25.626h9.249l-4.609-30.052-4.64 30.052zm-19.902 25.626l15.018-68.865h19.139l14.851 68.865h-16.102l-2.015-13.202h-12.653l-1.999 13.202h-16.239zm71.23-40.202l1.053.046.962.046c3.342 0 5.708-.672 7.097-2.015s2.075-3.602 2.075-6.792c0-2.961-.686-5.051-2.075-6.288s-3.755-1.862-7.097-1.862l-.962.046-1.053.046v16.773zm-15.919 40.202v-68.865h18.117c5.922 0 10.241.275 12.912.824 2.686.55 4.869 1.496 6.532 2.839 1.969 1.618 3.434 3.602 4.411 5.953.962 2.35 1.45 5.158 1.45 8.409 0 3.953-.687 7.281-2.075 9.967s-3.541 4.884-6.457 6.624c4.976 2.198 7.586 7.433 7.861 15.69v.229l.091 3.754c.122 7.754 1.404 12.607 3.847 14.576h-18.819c-.428-1.434-.733-2.93-.931-4.487a43.51 43.51 0 0 1-.29-5.037c0-1.099.03-2.442.091-3.998l.092-3.069c0-4.212-.549-7.081-1.648-8.638-1.115-1.541-3.099-2.32-5.953-2.32h-3.312v27.549h-15.919zm53.664 0v-68.865h16.773l13.386 42.476-1.191-18.514c-.259-5.173-.381-9.569-.381-13.141v-10.821h14.346v68.865h-16.804l-13.477-43.773c.595 5.693 1.053 11.218 1.359 16.56a261.22 261.22 0 0 1 .473 15.583v11.63h-14.484zm54.197 0v-68.865h16.102v68.865h-16.102zm27.274 0v-68.865h16.774l13.385 42.476-1.19-18.514c-.26-5.173-.382-9.569-.382-13.141v-10.821h14.347v68.865h-16.804l-13.477-43.773c.595 5.693 1.053 11.218 1.359 16.56a261.22 261.22 0 0 1 .473 15.583v11.63h-14.485zm96.491-37.744v37.744h-11.096l-.718-4.289c-1.602 1.847-3.388 3.221-5.342 4.137-1.953.9-4.166 1.358-6.639 1.358-2.793 0-5.387-.519-7.753-1.572-2.366-1.038-4.426-2.549-6.181-4.503-2.183-2.426-3.725-5.677-4.61-9.753-.9-4.09-1.343-11.004-1.343-20.741 0-6.945.321-12.516.946-16.682.626-4.182 1.588-7.311 2.9-9.387 1.908-3.022 4.426-5.281 7.571-6.807 3.143-1.511 6.883-2.274 11.202-2.274 6.777 0 11.874 1.847 15.293 5.525 3.434 3.678 5.144 9.173 5.144 16.468a24.5 24.5 0 0 1-.046 1.237c-.031.549-.046.992-.046 1.312h-15.293v-.855c0-3.953-.427-6.791-1.267-8.486-.854-1.694-2.228-2.548-4.136-2.548-2.274 0-3.831 1.037-4.685 3.128-.84 2.091-1.267 6.96-1.267 14.622v6.792 4.747c0 7.646.397 12.484 1.205 14.484s2.29 2.991 4.473 2.991c2.167 0 3.754-.885 4.731-2.64.992-1.756 1.48-4.609 1.48-8.532l-.03-2.06-.061-1.389h-6.304v-12.027h21.872z" /><g fill-rule="evenodd"><path d="M707.141 494.543l-6.795-18.296-6.657 18.296h13.452z" /><path d="M682.757 529.225c.016.534-.013 1.133-.042 1.718-.072 1.469-.145 2.987.428 4.061a.76.76 0 0 0 .057.096c2.53 3.632 8.356 4.978 12.825 5.466 3.533.386 7.351.355 10.869-.163 4.566-.673 9.019-2.186 11.356-4.915.054-.064.099-.134.136-.209.525-1.108.464-2.631.406-4.103-.027-.659-.052-1.286-.027-1.852l.274-.263c12.911-6.646 21.742-20.104 21.742-35.625 0-22.115-17.929-40.044-40.045-40.044s-40.045 17.929-40.045 40.044c0 15.65 8.98 29.201 22.066 35.789z" /></g></g><path id="gear_icon" d="M638.907 497.173l.657-9.943.658-9.944 8.418-1.027a54.64 54.64 0 0 1 5.747-12.15l-5.347-7.262 6.782-7.301 6.782-7.301 8.261 5.193c5.421-3.528 11.506-6.123 18.026-7.559l1.88-9.912h9.965 9.965l1.881 9.912c4.023.887 7.881 2.213 11.52 3.93l7.575-6.391 7.732 6.286 7.733 6.286-4.414 8.173c2.816 3.349 5.239 7.039 7.197 11l8.792-.159 2.034 9.755 2.034 9.756-7.242 3.002.037 1.919c0 4.369-.513 8.618-1.479 12.692l5.671 4.442-4.576 8.853-4.576 8.852-6.094-1.816a55.02 55.02 0 0 1-22.4 17.492v-11.154c13.94-7.591 23.4-22.37 23.4-39.361 0-24.737-20.053-44.789-44.79-44.789s-44.789 20.052-44.789 44.789c0 16.832 9.285 31.494 23.013 39.145v11.201c-6.348-2.749-12.074-6.665-16.908-11.476l-5.568 2.549-5.762-8.13-5.763-8.13 4.776-4.958c-1.819-4.589-3.036-9.481-3.555-14.58l-7.273-1.884zm43.842 41.929a33.93 33.93 0 0 1-.045 1.216c-.073 1.47-.146 2.988.427 4.062a.65.65 0 0 0 .058.095c2.243 3.223 7.081 4.646 11.264 5.267 4.299.638 9.137.627 13.407-.121 4.214-.738 8.208-2.223 10.378-4.757.055-.064.099-.134.136-.209.525-1.108.464-2.631.406-4.103-.021-.515-.04-1.01-.037-1.472-5.447 2.637-11.56 4.117-18.018 4.117-6.442 0-12.539-1.471-17.976-4.095zm0 18.518c-.005.395-.025.81-.045 1.217-.073 1.47-.146 2.987.427 4.062a.65.65 0 0 0 .058.095c2.243 3.222 7.081 4.646 11.264 5.266a39.71 39.71 0 0 0 1.781.224 4.63 4.63 0 0 0 9 .017 36.9 36.9 0 0 0 2.626-.361c4.214-.738 8.208-2.224 10.378-4.758.055-.063.099-.133.136-.208.525-1.109.464-2.631.406-4.103-.021-.515-.04-1.01-.037-1.472-5.447 2.637-11.56 4.117-18.018 4.117-6.442 0-12.539-1.471-17.976-4.096zm0-9.259c-.005.395-.025.81-.045 1.217-.073 1.469-.146 2.987.427 4.062a.65.65 0 0 0 .058.095c2.243 3.222 7.081 4.645 11.264 5.266 4.299.638 9.137.627 13.407-.12 4.214-.738 8.208-2.224 10.378-4.758a.98.98 0 0 0 .136-.208c.525-1.109.464-2.632.406-4.104a31.84 31.84 0 0 1-.037-1.472c-5.447 2.638-11.56 4.117-18.018 4.117-6.442 0-12.539-1.471-17.976-4.095z" fill-rule="evenodd" /><path id="gear_a" d="M696.092 497.472h9.335l-4.652-25.521-4.683 25.521zm-20.086 21.762l15.157-58.481h19.316l14.988 58.481h-16.251l-2.033-11.211h-12.77l-2.018 11.211h-16.389z" /></g></svg>
+                </div>
+            </label>
+</div>
+<header role="banner" class="p-2 xl:p-0 overflow-y-auto transition duration-150 ease-in-out bg-slate-800 xl:bg-transparent fixed xl:relative -ml-[360px] xl:ml-0 w-[360px] xl:w-full flex flex-col items-center top-0 left-0 h-full xl:top-auto xl:left-auto xl:h-auto z-50 nav-container shadow xl:no-shadow">
+    <div class="w-full xl:h-[56px] xl:border-b-2 xl:border-gray-100 xl:border-solid dark:xl:border-slate-800 header-content_top-bar">
+    <label for="toggler" class="flex items-center inline-block pt-4 pb-4 pl-0 pr-0 text-center no-underline toggler text-slate-100 avatar lg:hidden">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="h-6 mr-4 fill-current" role="img" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+        <span class="inline-block text-slate-100">Tap to hide</span>
+    </label>
+    <div class="flex flex-col m-auto xl:flex-row xl:items-center max-w-screen-2xl">
+        <a href="https://adamtheautomator.com/">
+            <div class="flex max-w-[300px] h-[50px] pr-0 pt-1 pb-1 pl-0 sm:pl-2 2xl:pl-0 m-0 items-center justify-start xl:justify-center">
+                <svg class="p-0 m-0 border-none inline-block w-auto" id="svg" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="638.907 429.967 592.185 142.067" width="100%" height="100%" aria-labelledby="logo_title"><title id="logo_title">ATA Learning</title><style>#words_ta{fill:#0f172a;}#words_learning_icon_lightbulb{fill:#06b6d4;}#gear_icon{fill:#0f172a;}#gear_a{fill:#e2e8f0;}html.dark #words_ta{fill:#e2e8f0;}html.dark #gear_icon{fill:#e2e8f0;}</style><defs><clipPath id="A"><path d="M638.907 429.967h592.185v142.067H638.907z" /></clipPath></defs><g clip-path="url(#A)"><g id="words_ta"><path d="M775.764 521.877v-55.495h-12.882v-13.37h42.583v13.37h-13.554v55.495h-16.147zm47.939-25.626h9.25l-4.61-30.052-4.64 30.052zm-19.902 25.626l15.018-68.865h19.14l14.85 68.865h-16.102l-2.015-13.202H822.04l-2 13.202h-16.239z" /></g><g id="words_learning_icon_lightbulb"><path d="M894.567 521.877h-35.454v-68.865h16.102v54.961h19.352v13.904zm7.113 0v-68.865h37.47v13.37h-21.46v12.653h19.811v13.813H917.69v15.033h21.46v13.996h-37.47zm62.378-25.626h9.249l-4.609-30.052-4.64 30.052zm-19.902 25.626l15.018-68.865h19.139l14.851 68.865h-16.102l-2.015-13.202h-12.653l-1.999 13.202h-16.239zm71.23-40.202l1.053.046.962.046c3.342 0 5.708-.672 7.097-2.015s2.075-3.602 2.075-6.792c0-2.961-.686-5.051-2.075-6.288s-3.755-1.862-7.097-1.862l-.962.046-1.053.046v16.773zm-15.919 40.202v-68.865h18.117c5.922 0 10.241.275 12.912.824 2.686.55 4.869 1.496 6.532 2.839 1.969 1.618 3.434 3.602 4.411 5.953.962 2.35 1.45 5.158 1.45 8.409 0 3.953-.687 7.281-2.075 9.967s-3.541 4.884-6.457 6.624c4.976 2.198 7.586 7.433 7.861 15.69v.229l.091 3.754c.122 7.754 1.404 12.607 3.847 14.576h-18.819c-.428-1.434-.733-2.93-.931-4.487a43.51 43.51 0 0 1-.29-5.037c0-1.099.03-2.442.091-3.998l.092-3.069c0-4.212-.549-7.081-1.648-8.638-1.115-1.541-3.099-2.32-5.953-2.32h-3.312v27.549h-15.919zm53.664 0v-68.865h16.773l13.386 42.476-1.191-18.514c-.259-5.173-.381-9.569-.381-13.141v-10.821h14.346v68.865h-16.804l-13.477-43.773c.595 5.693 1.053 11.218 1.359 16.56a261.22 261.22 0 0 1 .473 15.583v11.63h-14.484zm54.197 0v-68.865h16.102v68.865h-16.102zm27.274 0v-68.865h16.774l13.385 42.476-1.19-18.514c-.26-5.173-.382-9.569-.382-13.141v-10.821h14.347v68.865h-16.804l-13.477-43.773c.595 5.693 1.053 11.218 1.359 16.56a261.22 261.22 0 0 1 .473 15.583v11.63h-14.485zm96.491-37.744v37.744h-11.096l-.718-4.289c-1.602 1.847-3.388 3.221-5.342 4.137-1.953.9-4.166 1.358-6.639 1.358-2.793 0-5.387-.519-7.753-1.572-2.366-1.038-4.426-2.549-6.181-4.503-2.183-2.426-3.725-5.677-4.61-9.753-.9-4.09-1.343-11.004-1.343-20.741 0-6.945.321-12.516.946-16.682.626-4.182 1.588-7.311 2.9-9.387 1.908-3.022 4.426-5.281 7.571-6.807 3.143-1.511 6.883-2.274 11.202-2.274 6.777 0 11.874 1.847 15.293 5.525 3.434 3.678 5.144 9.173 5.144 16.468a24.5 24.5 0 0 1-.046 1.237c-.031.549-.046.992-.046 1.312h-15.293v-.855c0-3.953-.427-6.791-1.267-8.486-.854-1.694-2.228-2.548-4.136-2.548-2.274 0-3.831 1.037-4.685 3.128-.84 2.091-1.267 6.96-1.267 14.622v6.792 4.747c0 7.646.397 12.484 1.205 14.484s2.29 2.991 4.473 2.991c2.167 0 3.754-.885 4.731-2.64.992-1.756 1.48-4.609 1.48-8.532l-.03-2.06-.061-1.389h-6.304v-12.027h21.872z" /><g fill-rule="evenodd"><path d="M707.141 494.543l-6.795-18.296-6.657 18.296h13.452z" /><path d="M682.757 529.225c.016.534-.013 1.133-.042 1.718-.072 1.469-.145 2.987.428 4.061a.76.76 0 0 0 .057.096c2.53 3.632 8.356 4.978 12.825 5.466 3.533.386 7.351.355 10.869-.163 4.566-.673 9.019-2.186 11.356-4.915.054-.064.099-.134.136-.209.525-1.108.464-2.631.406-4.103-.027-.659-.052-1.286-.027-1.852l.274-.263c12.911-6.646 21.742-20.104 21.742-35.625 0-22.115-17.929-40.044-40.045-40.044s-40.045 17.929-40.045 40.044c0 15.65 8.98 29.201 22.066 35.789z" /></g></g><path id="gear_icon" d="M638.907 497.173l.657-9.943.658-9.944 8.418-1.027a54.64 54.64 0 0 1 5.747-12.15l-5.347-7.262 6.782-7.301 6.782-7.301 8.261 5.193c5.421-3.528 11.506-6.123 18.026-7.559l1.88-9.912h9.965 9.965l1.881 9.912c4.023.887 7.881 2.213 11.52 3.93l7.575-6.391 7.732 6.286 7.733 6.286-4.414 8.173c2.816 3.349 5.239 7.039 7.197 11l8.792-.159 2.034 9.755 2.034 9.756-7.242 3.002.037 1.919c0 4.369-.513 8.618-1.479 12.692l5.671 4.442-4.576 8.853-4.576 8.852-6.094-1.816a55.02 55.02 0 0 1-22.4 17.492v-11.154c13.94-7.591 23.4-22.37 23.4-39.361 0-24.737-20.053-44.789-44.79-44.789s-44.789 20.052-44.789 44.789c0 16.832 9.285 31.494 23.013 39.145v11.201c-6.348-2.749-12.074-6.665-16.908-11.476l-5.568 2.549-5.762-8.13-5.763-8.13 4.776-4.958c-1.819-4.589-3.036-9.481-3.555-14.58l-7.273-1.884zm43.842 41.929a33.93 33.93 0 0 1-.045 1.216c-.073 1.47-.146 2.988.427 4.062a.65.65 0 0 0 .058.095c2.243 3.223 7.081 4.646 11.264 5.267 4.299.638 9.137.627 13.407-.121 4.214-.738 8.208-2.223 10.378-4.757.055-.064.099-.134.136-.209.525-1.108.464-2.631.406-4.103-.021-.515-.04-1.01-.037-1.472-5.447 2.637-11.56 4.117-18.018 4.117-6.442 0-12.539-1.471-17.976-4.095zm0 18.518c-.005.395-.025.81-.045 1.217-.073 1.47-.146 2.987.427 4.062a.65.65 0 0 0 .058.095c2.243 3.222 7.081 4.646 11.264 5.266a39.71 39.71 0 0 0 1.781.224 4.63 4.63 0 0 0 9 .017 36.9 36.9 0 0 0 2.626-.361c4.214-.738 8.208-2.224 10.378-4.758.055-.063.099-.133.136-.208.525-1.109.464-2.631.406-4.103-.021-.515-.04-1.01-.037-1.472-5.447 2.637-11.56 4.117-18.018 4.117-6.442 0-12.539-1.471-17.976-4.096zm0-9.259c-.005.395-.025.81-.045 1.217-.073 1.469-.146 2.987.427 4.062a.65.65 0 0 0 .058.095c2.243 3.222 7.081 4.645 11.264 5.266 4.299.638 9.137.627 13.407-.12 4.214-.738 8.208-2.224 10.378-4.758a.98.98 0 0 0 .136-.208c.525-1.109.464-2.632.406-4.104a31.84 31.84 0 0 1-.037-1.472c-5.447 2.638-11.56 4.117-18.018 4.117-6.442 0-12.539-1.471-17.976-4.095z" fill-rule="evenodd" /><path id="gear_a" d="M696.092 497.472h9.335l-4.652-25.521-4.683 25.521zm-20.086 21.762l15.157-58.481h19.316l14.988 58.481h-16.251l-2.033-11.211h-12.77l-2.018 11.211h-16.389z" /></g></svg>
+            </div>
+        </a>
+        <nav role="navigation" class="w-full pl-0 pr-0 sm:pl-2 sm:pr-2 2xl:pl-8 2xl:pr-8">
+            <ul id="main-menu" class="w-full flex flex-col xl:flex-row font-semibold text-slate-300 xl:text-slate-700 dark:text-slate-300 text-sm"><li id="menu-item-2678" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2678 flex items-center site-navigation__item"><a href="https://adamtheautomator.com/" class="block pl-0 pr-2 pb-2 pt-2 lg:pl-2 hover:bg-cyan-500 hover:text-white rounded">Home</a></li>
+<li id="menu-item-13144" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-13144 flex items-center site-navigation__item"><a href="https://adamtheautomator.com/tutorials/" class="block pl-0 pr-2 pb-2 pt-2 lg:pl-2 hover:bg-cyan-500 hover:text-white rounded">Tutorials</a></li>
+<li id="menu-item-13145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13145 flex items-center site-navigation__item"><a href="https://adamtheautomator.com/ata-guidebooks/" class="block pl-0 pr-2 pb-2 pt-2 lg:pl-2 hover:bg-cyan-500 hover:text-white rounded">Guidebooks</a></li>
+<li id="menu-item-13146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13146 flex items-center site-navigation__item"><a href="https://adamtheautomator.com/author/" class="block pl-0 pr-2 pb-2 pt-2 lg:pl-2 hover:bg-cyan-500 hover:text-white rounded">Instructors</a></li>
+<li id="menu-item-2681" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2681 flex items-center site-navigation__item"><a href="https://adamtheautomator.com/friends/" class="block pl-0 pr-2 pb-2 pt-2 lg:pl-2 hover:bg-cyan-500 hover:text-white rounded">Get Paid to Write</a></li>
+<li id="menu-item-2679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679 flex items-center site-navigation__item"><a href="https://adamtheautomator.com/advertising/" class="block pl-0 pr-2 pb-2 pt-2 lg:pl-2 hover:bg-cyan-500 hover:text-white rounded">Advertising</a></li>
+<li id="menu-item-7325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7325 flex items-center site-navigation__item"><a href="https://adamtheautomator.com/resources/" class="block pl-0 pr-2 pb-2 pt-2 lg:pl-2 hover:bg-cyan-500 hover:text-white rounded">Recommended Resources</a></li>
+</ul>        </nav>
+        <button aria-label="Toggle Light and Dark Mode" id="theme-toggle" type="button" class="p-2 mr-4 text-sm rounded text-slate-700 dark:text-slate-400 hover:bg-slate-700 hover:text-slate-400 dark:hover:bg-slate-400 dark:hover:text-slate-700">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 fill-current"  viewBox="0 0 20 20" xmlns="https://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 fill-current" viewBox="0 0 20 20" xmlns="https://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+        </button>
+                <form class="mt-3 mb-3 search xl:mt-0 lg:mb-0 xl:pr-2"
+             method="get" action="https://adamtheautomator.com/">
+            <label for="search-form-1">
+                <span class="sr-only">Search for:</span>
+                <input type="search" id="search-form-1" placeholder="Search &hellip;" class="min-w-[100px] xl:min-w-[200px] 2xl:min-w-[250px] w-full shadow appearance-none rounded w-full py-2 px-2 text-slate-600 focus:outline-none" value="" name="s" />
+            </label>
+            <input type="submit" class="sr-only" value="Search" />
+        </form>
+    </div>
+</div>
+<div class="w-full xl:h-[56px] lower-nav xl:border-gray-100 xl:border-solid xl:bg-slate-800 dark:xl:bg-slate-900 dark:xl:border-slate-900 header-content_bottom-bar">
+    <div class="flex flex-col justify-between m-auto max-w-screen-2xl xl:flex-row h-full">
+                <div class="header-ad-container pl-2 pr-2 lg:pl-0 lg:pr-0 inline-flex items-center flex-col md:flex-row max-w-screen-2xl h-full text-slate-300 text-base leading-relaxed">
+        <div class="header-ad-logo h-[40px] max-h-[40px] w-auto pl-2">
+    <a href="https://www.manageengine.com/products/ad-manager/tp/windows-active-directory-management-tool.html?utm_source=ata&utm_medium=tpap&utm_campaign=ADMP_text" target="_blank" rel="noreferrer noopener nofollow sponsored">    <img width="300" height="62" src="https://adamtheautomator.com/wp-content/uploads/2022/08/manageengine-logo1.svg" class="attachment-medium size-medium" alt="" loading="lazy" />    </a>    </div>
+        <div class="ml-6 mr-2 text-left flex items-center max-w-[750px]"><p>Manage and Report Active Directory, Exchange and Microsoft 365 with<b> ManageEngine ADManager Plus</b>. <a href="https://www.manageengine.com/products/ad-manager/tp/windows-active-directory-management-tool.html?utm_source=ata&amp;utm_medium=tpap&amp;utm_campaign=ADMP_text" target="_blank" rel="nofollow noopener sponsored" data-saferedirecturl="https://www.google.com/url?q=https://www.manageengine.com/products/ad-manager/tp/windows-active-directory-management-tool.html?utm_source%3Data%26utm_medium%3Dtpap%26utm_campaign%3DADMP_text&amp;source=gmail&amp;ust=1659800559543000&amp;usg=AOvVaw0AG8zas0QNGv99MvhbKYLw"><b>Download Free Trial!</b></a></p>
+</div>
+</div>
+        <ul class="inline-flex list-none items-center m-0 md:ml-auto">
+            <li><a class="flex items-center inline h-10 p-2 mr-2 text-center no-underline text-slate-400 hover:text-white hover:text-underline md:h-auto md:p-4 avatar md:mr-0"
+                    aria-label="Adam the Automator on Twitter" href="https://twitter.com/adbertram" target="_blank"
+                    rel="nofollow noopener"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                        data-icon="twitter" class="h-4 fill-current" role="img" xmlns="https://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                        </path>
+                    </svg></a></li>
+            <li><a class="flex items-center inline h-10 p-2 mr-2 text-center no-underline text-slate-400 hover:text-white hover:text-underline md:h-auto md:p-4 avatar md:mr-0"
+                    aria-label="Adam the Automator on GitHub" href="https://github.com/Adam-the-Automator" target="_blank"
+                    rel="nofollow noopener"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                        data-icon="github" class="h-4 fill-current" role="img" xmlns="https://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512">
+                        <path fill="currentColor"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                        </path>
+                    </svg></a></li>
+            <li><a class="flex items-center inline h-10 p-2 text-center no-underline text-slate-400 hover:text-white hover:text-underline md:h-auto md:p-4 avatar"
+                    aria-label="Adam the Automator on LinkedIn" href="https://www.linkedin.com/company/adam-the-automator-llc"
+                    target="_blank" rel="nofollow noopener"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                        data-icon="linkedin-in" class="h-4 fill-current" role="img" xmlns="https://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                        </path>
+                    </svg></a></li>
+            <li><a class="flex items-center inline h-10 p-2 text-center no-underline text-slate-400 hover:text-white hover:text-underline md:h-auto md:p-4 avatar"
+                    aria-label="Adam the Automator RSS Feed" href="https://adamtheautomator.com/feed/"
+                    target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rss"
+                        class="h-4 fill-current" role="img" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z">
+                        </path>
+                    </svg></a>
+            </li>
+        </ul>
+    </div>
+</div></header>
+<div class="main min-h-[300px] flex justify-center items-center flex-col dark:bg-slate-800">
+    <header class="flex flex-col lg:flex-row justify-center items-center w-full lg:h-[300px] relative dark:bg-slate-800 border-b border-slate-300">
+    <div class="hidden h-full lg:block lg:w-1/2"></div>
+    <div class="w-full lg:w-1/2 h-[200px] lg:h-full lg:[clip-path:polygon(10%_0,100%_0%,100%_100%,0_100%)]">
+      <picture class="w-auto h-full object-center object-cover">
+        <source
+          srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring-1024x576.jpg 768w"
+          sizes="768px"
+          width="1024"
+          height="576"
+          media="(min-width: 768px)"
+        />
+        <img
+          width="100%"
+          height="100%"
+          fetchpriority="high"
+          class="h-full max-h-[200px] lg:max-h-full object-bottom object-cover"
+          alt=""
+          aria-hidden="true"
+          src="https://adamtheautomator.com/wp-content/uploads/2022/05/The-Essential-Guide-to-Grafana-Docker-Monitoring-768x432.jpg" />
+      </picture>
+    </div>
+    <div class="w-full h-full pl-2 pr-2 lg:absolute max-w-screen-2xl 1xl:pl-2 2xl:pl-0 lg:pr-0">
+      <div class="w-full h-full flex flex-col lg:w-1/2 pt-2 pb-2">
+        <h1 class="mb-2 text-2xl font-bold text-center text-slate-800 dark:text-white xl:text-3xl lg:text-left">The Essential Guide to Grafana Docker Monitoring</h1>
+        <p class="mb-3 text-sm text-center text-slate-600 dark:text-slate-400 lg:text-left"><strong class="mr-2">Published:</strong>17 May 2022<span class="text-sm text-slate-700 dark:text-slate-400"> - <strong><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 10</span> <span class="rt-label rt-postfix">min. read</span></span></strong></span>
+        </p>
+                        <ul class="flex inline-flex flex-row flex-wrap justify-center lg:justify-start w-full gap-2 mb-6 list-none lg:flex-nowrap">
+          <li><a class="inline-flex items-center px-3 py-1 text-sm font-bold text-indigo-700 uppercase bg-indigo-200 rounded shadow leading-sm hover:bg-indigo-700 hover:text-indigo-200" href="https://adamtheautomator.com/tag/docker/">Docker</a></li><li><a class="inline-flex items-center px-3 py-1 text-sm font-bold text-indigo-700 uppercase bg-indigo-200 rounded shadow leading-sm hover:bg-indigo-700 hover:text-indigo-200" href="https://adamtheautomator.com/tag/grafana/">Grafana</a></li><li><a class="inline-flex items-center px-3 py-1 text-sm font-bold text-indigo-700 uppercase bg-indigo-200 rounded shadow leading-sm hover:bg-indigo-700 hover:text-indigo-200" href="https://adamtheautomator.com/tag/prometheus/">Prometheus</a></li><li><a class="inline-flex items-center px-3 py-1 text-sm font-bold text-indigo-700 uppercase bg-indigo-200 rounded shadow leading-sm hover:bg-indigo-700 hover:text-indigo-200" href="https://adamtheautomator.com/tag/ubuntu-linux/">Ubuntu Linux</a></li>        </ul>
+                <div class="flex mt-auto justify-center lg:justify-start pb-4 pt-4">
+          <a class="block mr-4 shrink-0" href="https://adamtheautomator.com/author/joseph-eshiett/">
+                        <img class="avatar rounded-full shadow-2xl ml-1 ring-4 ring-white w-[96px] h-[96px]" loading="lazy" width="96" height="96" src="https://secure.gravatar.com/avatar/d6969082be3d78afe0563b6d462d1e7e?s=96&#038;d=mm&#038;r=g" alt="Joseph Eshiett Image" decoding="async">
+                      </a>
+          <div class="flex flex-col text-slate-800 dark:text-slate-300">
+            <p class="mb-1 text-lg font-bold lg:text-xl"><a
+                href="https://adamtheautomator.com/author/joseph-eshiett/">Joseph Eshiett</a>
+            </p>
+            <p class="mb-4">Read <a class="underline decoration underline-offset-4 decoration-2 decoration-cyan-500"
+                href="https://adamtheautomator.com/author/joseph-eshiett/">more
+                tutorials</a> by Joseph Eshiett!</p>
+            <ul class="inline-flex list-none">
+                                                        <li>
+                <a class="flex flex-row items-center hover:text-slate-400 dark:hove:text-white" href="https://twitter.com/eshiettjoseph" target="_blank"
+                  rel="nofollow noopener" aria-label="Joseph Eshiett on Twitter"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                    data-icon="twitter" class="w-6 h-6 mr-4" role="img"
+                    xmlns="https://www.w3.org/2000/svg" viewBox="0 0 512 512" labeledby="twitterTitle">
+                    <title id="twitterTitle">Twitter</title>
+                    <path fill="currentColor"
+                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                    </path>
+                  </svg></a>
+              </li>
+                                                      </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <article id="post-15420" class="max-w-screen-2xl w-full grid grid-cols-1 lg:grid-cols-[minmax(240px,300px)_1fr_minmax(224px,350px)] gap-2 1xl:gap-8 post-15420 post type-post status-publish format-standard has-post-thumbnail hentry category-it-ops tag-docker tag-grafana tag-prometheus tag-ubuntu-linux wp-sticky">
+    <div class="justify-self-center w-full max-w-[75ch] pl-2 pr-2 mt-3 prose prose-slate dark:prose-invert dark:bg-slate-800 1xl:pl-2 2xl:pl-0 lg:pr-0">
+      <div id="ez-toc-container" class="ez-toc-v2_0_31_1 counter-hierarchy counter-decimal ez-toc-transparent">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title">Table of Contents</p>
+<span class="ez-toc-title-toggle"></span></div>
+<nav><ul class="ez-toc-list ez-toc-list-level-1"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-1" href="#Prerequisites" title="Prerequisites">Prerequisites</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-2" href="#Configuring_Docker_for_Grafana" title="Configuring Docker for Grafana">Configuring Docker for Grafana</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-3" href="#Accessing_the_Docker_Metrics" title="Accessing the Docker Metrics">Accessing the Docker Metrics</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-4" href="#Setting_up_Prometheus_to_Run_on_Docker" title="Setting up Prometheus to Run on Docker">Setting up Prometheus to Run on Docker</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-5" href="#Running_Prometheus_and_Grafana_on_Docker" title="Running Prometheus and Grafana on Docker">Running Prometheus and Grafana on Docker</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-6" href="#Securing_Grafana_with_NGINX_and_Lets_Encrypt" title="Securing Grafana with NGINX and Let’s Encrypt">Securing Grafana with NGINX and Let’s Encrypt</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-7" href="#Creating_Visualization_in_Grafana" title="Creating Visualization in Grafana">Creating Visualization in Grafana</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-8" href="#Conclusion" title="Conclusion">Conclusion</a></li></ul></nav></div>
+    </div>
+    <div class="article__content prose prose-slate dark:prose-invert dark:bg-slate-800 pt-12 pb-6 lg:pb-12 break-words pr-2 pl-2 lg:pr-0 lg:pl-0 prose-code:after:content-[''] prose-code:before:content-[''] prose-code:bg-slate-300 dark:prose-code:bg-slate-700 dark:prose-code:text-white prose-code:px-1 prose-code:py-1 prose-code:rounded prose-img:mb-2 prose-figcaption:text-slate-600 dark:prose-figcaption:text-slate-400 prose-img:shadow-lg dark:prose-img:shadow-[0_10px_15px_-3px_rgb(0,0,0,1),0_4px_6px_-4px_rgb(0,0,0,1)] dark:prose-hr:border-slate-400 prose-hr:border-slate-600 lg:min-w-[55ch] max-w-[75ch]">
+            <style>@media (max-width: 1200px) {
+							
+							
+						}</style><style>body .novashare-buttons.novashare-inline .novashare-button-icon { width: 100%; }</style><div class='novashare-buttons novashare-inline novashare-no-print'><div class='novashare-buttons-wrapper'><a href='https://twitter.com/intent/tweet?text=The%20Essential%20Guide%20to%20Grafana%20Docker%20Monitoring&url=https%3A%2F%2Fadamtheautomator.com%2Fgrafana-docker%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial%26utm_campaign%3Datawebsite&via=adbertram' aria-label='Twitter' target='_blank' class='novashare-button twitter' rel='nofollow noopener noreferrer'><span class='novashare-button-wrapper novashare-button-block'><span class='novashare-button-icon novashare-button-block'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></span><span class='novashare-button-label novashare-button-block novashare-hide'><span class='novashare-button-label-wrapper'>Twitter</span></span></span></a><a href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fadamtheautomator.com%2Fgrafana-docker%2F%3Futm_source%3Dfacebook%26utm_medium%3Dsocial%26utm_campaign%3Datawebsite' aria-label='Facebook' target='_blank' class='novashare-button facebook' rel='nofollow noopener noreferrer'><span class='novashare-button-wrapper novashare-button-block'><span class='novashare-button-icon novashare-button-block'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></span><span class='novashare-button-label novashare-button-block novashare-hide'><span class='novashare-button-label-wrapper'>Facebook</span></span></span></a><a href='https://www.linkedin.com/shareArticle?title=The%20Essential%20Guide%20to%20Grafana%20Docker%20Monitoring&url=https%3A%2F%2Fadamtheautomator.com%2Fgrafana-docker%2F%3Futm_source%3Dlinkedin%26utm_medium%3Dsocial%26utm_campaign%3Datawebsite&mini=true' aria-label='LinkedIn' target='_blank' class='novashare-button linkedin' rel='nofollow noopener noreferrer'><span class='novashare-button-wrapper novashare-button-block'><span class='novashare-button-icon novashare-button-block'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></span><span class='novashare-button-label novashare-button-block novashare-hide'><span class='novashare-button-label-wrapper'>LinkedIn</span></span></span></a></div></div>      <style type="text/css">body a.novashare-button {margin-bottom:0;} .novashare-inline{margin-bottom:0;}</style>
+            
+<p>Prometheus and Grafana are great tools for both metric data collection and visualization. But like any other tool, both have their strengths and weaknesses. To get the most out of your metric data, you’ll have both Prometheus and Grafana Docker Monitoring tools work in tandem.</p>
+
+
+
+<p>In this tutorial, you’ll learn how to monitor your Docker instance and collect time-series data for analysis with Grafana Docker monitoring.</p>
+
+
+
+<p>Read on and take your workflow to a whole new level!</p>
+
+
+
+<div id="ez-toc-container" class="ez-toc-v2_0_31_1 counter-hierarchy counter-decimal ez-toc-transparent">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title">Table of Contents</p>
+<span class="ez-toc-title-toggle"></span></div>
+<nav><ul class="ez-toc-list ez-toc-list-level-1"><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-1" href="#Prerequisites" title="Prerequisites">Prerequisites</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-2" href="#Configuring_Docker_for_Grafana" title="Configuring Docker for Grafana">Configuring Docker for Grafana</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-3" href="#Accessing_the_Docker_Metrics" title="Accessing the Docker Metrics">Accessing the Docker Metrics</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-4" href="#Setting_up_Prometheus_to_Run_on_Docker" title="Setting up Prometheus to Run on Docker">Setting up Prometheus to Run on Docker</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-5" href="#Running_Prometheus_and_Grafana_on_Docker" title="Running Prometheus and Grafana on Docker">Running Prometheus and Grafana on Docker</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-6" href="#Securing_Grafana_with_NGINX_and_Lets_Encrypt" title="Securing Grafana with NGINX and Let’s Encrypt">Securing Grafana with NGINX and Let’s Encrypt</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-7" href="#Creating_Visualization_in_Grafana" title="Creating Visualization in Grafana">Creating Visualization in Grafana</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-8" href="#Conclusion" title="Conclusion">Conclusion</a></li></ul></nav></div>
+<h2><span class="ez-toc-section" id="Prerequisites"></span>Prerequisites<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>This tutorial comprises hands-on demonstrations. To follow along, make sure to have the following:</p>
+
+
+
+<ul><li>An Ubuntu 20.04 machine &#8211; This tutorial uses the Ubuntu 20.04 machine as the Docker host. </li></ul>
+
+
+<p class="related-links"><span class="related-links__text">Related:</span><a class="related-links__link" href="https://adamtheautomator.com/install-ubuntu/">How to Install Ubuntu 20.04 [Step-by-Step]</a></p>
+
+
+
+<ul><li><a href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository" target="_blank" rel="noreferrer noopener">Docker CE (Community Edition)</a> and <a href="https://docs.docker.com/compose/install/#install-compose-on-linux-systems" target="_blank" rel="noreferrer noopener">Docker Compose</a> &#8211; This tutorial uses Docker version 20.10.14 and Docker Compose version 1.29.2 </li></ul>
+
+
+<p class="related-links"><span class="related-links__text">Related:</span><a class="related-links__link" href="https://adamtheautomator.com/docker-ubuntu/">How to Install and Use Docker on Ubuntu (In the Real World)</a></p>
+
+
+
+<ul><li>Configure your <a href="https://adamtheautomator.com/ufw-firewall/" target="_blank" rel="noreferrer noopener">firewall</a> rules to allow traffic on ports 80, 443, and 9323 for HTTP and HTTPS connection and your Docker metrics. </li></ul>
+
+
+
+<ul><li>A user with <a href="https://www.vultr.com/docs/create-a-sudo-user-on-ubuntu-best-practices" target="_blank" rel="noreferrer noopener">sudo</a> privileges.</li></ul>
+
+
+
+<ul><li>A registered domain name that points to your server’s IP address &#8211; This tutorial uses NGINX as a reverse proxy to route traffic to Grafana through the domain name to Grafana running in Docker. </li></ul>
+
+
+<p class="related-links"><span class="related-links__text">Related:</span><a class="related-links__link" href="https://adamtheautomator.com/nginx-subdomain/">How To Serve NGINX Subdomains or Multiple Domains</a></p>
+
+
+
+<h2><span class="ez-toc-section" id="Configuring_Docker_for_Grafana"></span>Configuring Docker for Grafana<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Before viewing all sorts of Docker metrics on Grafana, you must configure Docker first to expose its metrics via an HTTP endpoint. These Docker metrics can be states of containers available on the Docker host and resource utilization of each container.</p>
+
+
+
+<p>To expose the Docker metrics, you’ll create a <em>.json</em> file to configure the Docker daemon:</p>
+
+
+
+<p>1. Open the <em>daemon.json</em> file in the <em>/etc/docker/</em> directory using your preferred text editor and add the following code. The code below configures the Docker daemon to expose the Docker metrics at 0.0.0.0 via port 9323 (endpoint: <em>http://0.0.0.0:9323</em>). </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">{
+	"metrics-addr" : "0.0.0.0:9323",
+	"experimental" : true
+}</code></pre>
+</div>
+
+
+<p>2. Run the following command to <code>restart</code> the <code>docker</code> service for the changes you made on the <em>daemon.json</em> file to take effect. This command doesn’t provide output, but you’ll check the Docker service’s status in the following step. </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">sudo service docker restart</code></pre>
+</div>
+
+
+<p>3. Lastly, run the below command to confirm that the Docker service is running properly. </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">sudo service docker status</code></pre>
+</div>
+
+
+<p>The output below indicates the Docker service is <strong>active (running)</strong>. As you see in the logs, the Docker metrics API is listening on <strong>0.0.0.0:9323</strong>. </p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="2560" height="742" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-243.png" alt="Verifying the Docker Service is Running" class="wp-image-15421" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-243.png 2560w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-243-300x87.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-243-1024x297.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-243-768x223.png 768w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-243-1536x445.png 1536w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-243-2048x594.png 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /><figcaption>Verifying the Docker Service is Running</figcaption></figure>
+
+
+
+<h2><span class="ez-toc-section" id="Accessing_the_Docker_Metrics"></span>Accessing the Docker Metrics<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Now that you’ve configured Docker for Grafana, feel free to access your raw and unrefined Docker metrics, but only in plain text format. You can access your Docker metrics via the endpoint you set in the <em>daemon.json</em> file.</p>
+
+
+
+<p>Run the <code>curl</code> command below to view your Docker metrics via the localhost endpoint (<code>http://localhost:9323/metrics</code>).</p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">curl -i &lt;http://localhost:9323/metrics&gt;
+</code></pre>
+</div>
+
+
+<p>Your raw and unrefined Docker metrics (metric queries and values) should look similar to those below.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="1816" height="1412" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-244.png" alt="Accessing Docker Metrics" class="wp-image-15422" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-244.png 1816w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-244-300x233.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-244-1024x796.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-244-768x597.png 768w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-244-1536x1194.png 1536w" sizes="(max-width: 1816px) 100vw, 1816px" /><figcaption>Accessing Docker Metrics</figcaption></figure></div>
+
+
+<p>Since this tutorial focuses only on container state metrics, pipe the <code>grep</code> command to extract metrics on the state of available Docker containers.</p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">curl -i &lt;http://localhost:9323/metrics&gt; | grep containers
+</code></pre>
+</div>
+
+
+<p>The image below displays the queries and values for the different container states (<strong>paused</strong>, <strong>running</strong>, and <strong>stopped</strong>). The values for each query shown below are set to 0 for all the container states, indicating no containers are currently available.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="1422" height="156" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-245.png" alt="Finding Docker Metric Queries for the Docker Container States" class="wp-image-15423" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-245.png 1422w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-245-300x33.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-245-1024x112.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-245-768x84.png 768w" sizes="(max-width: 1422px) 100vw, 1422px" /><figcaption>Finding Docker Metric Queries for the Docker Container States</figcaption></figure></div>
+
+
+<h2><span class="ez-toc-section" id="Setting_up_Prometheus_to_Run_on_Docker"></span>Setting up Prometheus to Run on Docker<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>The Docker metrics are currently exposed via the endpoint you previously configured. Now it’s time to set up Prometheus to run on Docker via Docker-compose.</p>
+
+
+
+<p>You’ll configure a job on Prometheus to scrape the Docker metric data from the exposed endpoint configured as a Prometheus target.</p>
+
+
+
+<p>1. Run each command below to create a project directory (<code>~/monitoring</code>) and configuration directories as volumes for each service running via Docker-compose. </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash"># Create a directory for prometheus.yml, 
+# docker-compose.yml configuration file for the Prometheus,
+# Grafana, NGINX, and Certbot container deployments
+mkdir -p ~/monitoring/prometheus
+
+# Create a directory for Grafana datasource configurations
+mkdir -p ~/monitoring/grafana/provisioning/datasources
+
+# Create a directory for NGINX configurations
+mkdir -p ~/monitoring/nginx/conf
+
+# Create www and conf directories for Certbot configurations
+mkdir -p ~/monitoring/certbot/www
+mkdir -p ~/monitoring/certbot/conf
+
+# Set ~/monitoring directory as the working directory
+cd monitoring</code></pre>
+</div>
+
+
+<p>2. Next, create a file called <em>prometheus.yml</em> with your preferred editor in the <em>~/monitoring/prometheus</em> directory, and populate the code below. Be sure to replace <code>&lt;YOUR_SERVER_IP&gt;</code> with your server’s IP address, and save the changes. </p>
+
+
+
+<p>Without this file, Prometheus can’t scrape metrics and store them in a time-series database for analysis. </p>
+
+
+
+<p>The following code configures Prometheus and the Docker metric endpoint as a target on Prometheus for scraping at set intervals.</p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="yaml" class="language-yaml"># Set global configuration
+global:
+  scrape_interval:     15s # By default, scrape targets every 15 seconds.
+  evaluation_interval: 15s # By default, scrape targets every 15 seconds.
+  # scrape_timeout is set to the global default (10s).
+
+  # Attach these labels to any time series or alerts when communicating with
+  # external systems (federation, remote storage, Alertmanager).
+  external_labels:
+      monitor: 'my-project'
+
+# Load and evaluate rules in this file every 'evaluation_interval' seconds.
+rule_files:
+  # - "first.rules"
+  # - "second.rules"
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=&lt;job_name&gt;` to any timeseries 
+  # scraped from this config.
+
+  - job_name: 'prometheus'
+
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 5s
+    static_configs:
+         - targets: ['localhost:9090']
+
+  - job_name: 'docker-metrics'
+    scrape_interval: 5s
+    static_configs:
+		# Replace &lt;YOUR_SERVER_IP&gt; with your server IP
+      - targets: ['&lt;YOUR_SERVER_IP&gt;:9323']</code></pre>
+</div>
+
+
+<p>3. Create another file called <em>datasource.yml</em> in the <em>~/monitoring/grafana/provisioning/datasources</em> directory, add the code below and save the file. </p>
+
+
+
+<p>The code below sets Prometheus as a data source on Grafana since Grafana requires a data source to pull data from. </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="yaml" class="language-yaml"># config file version
+apiVersion: 1
+
+# list of datasources to insert/update depending
+# on what's available in the database
+datasources:
+  # &lt;string, required&gt; name of the datasource. Required
+- name: Prometheus
+  # &lt;string, required&gt; datasource type. Required
+  type: prometheus
+  # &lt;string, required&gt; access mode. direct or proxy. Required
+  access: proxy
+  # &lt;string&gt; url
+  url: http://prometheus:9090</code></pre>
+</div>
+
+
+<p>4. Lastly, create a file named <em>grafana.config</em> in the <em>~/monitoring/grafana/provisioning/</em> directory and add the configurations below. </p>
+
+
+
+<p>The following lines set your Grafana admin password and user sign-up to <code>false</code> as you will not need the feature. </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="yaml" class="language-yaml">GF_SECURITY_ADMIN_PASSWORD=admin
+GF_USERS_ALLOW_SIGN_UP=false</code></pre>
+</div>
+
+
+<h2><span class="ez-toc-section" id="Running_Prometheus_and_Grafana_on_Docker"></span>Running Prometheus and Grafana on Docker<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>You’ve created the necessary configurations and dependencies to run Prometheus and Docker. So it’s time to start up Prometheus and Grafana from the <em>docker-compose.yml</em> configuration file you will create shortly.</p>
+
+
+
+<p>Create a configuration file called <em>docker-compose.yml</em> in your project’s root directory (<em>~/monitoring</em>), add the code below, save the file and close the editor.</p>
+
+
+
+<p>The following configuration uses version 3.7 of the Docker-compose file format and defines all Prometheus and Grafana configurations.</p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="yaml" class="language-yaml">version: '3.7'
+
+# Persist data from Prometheus and Grafana with Docker volumes
+volumes:
+	prometheus_data: {}
+	grafana_data: {}
+
+# Connect containers via the front-tier and back-tier network
+networks:
+	backend:
+
+# Container services
+services:
+	prometheus:
+		# Prometheus uses the latest image
+    image: prom/prometheus:latest
+
+		# Stores Prometheus data locally in the prometheus directory
+    volumes:
+      - ./prometheus/:/etc/prometheus/
+      - prometheus_data:/prometheus
+
+		# Setup commands for Prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+
+		# Exposes port 9090 to access Prometheus web UI
+    ports:
+      - 9090:9090
+
+		# Connects Prometheus service to the back-tier network
+		networks:
+      - backend
+
+		# Restart policy for Prometheus service set to always
+    restart: always
+
+	grafana:
+		# Grafana uses the latest image
+    image: grafana/grafana:latest
+		
+		# Sets user ID to 472
+    user: "472"
+    depends_on:
+      - prometheus
+    ports:
+      - 3000:3000
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
+    env_file:
+      - ./grafana/grafana.config
+    networks:
+      - backend
+    restart: always</code></pre>
+</div>
+
+
+<p>Now, run the <code><a href="https://docs.docker.com/compose/reference/up/" target="_blank" rel="noreferrer noopener nofollow">docker-compose up</a></code> command below to create a container in detached (<code>-d</code>) mode.</p>
+
+
+
+<p>This command runs Prometheus and Grafana on Docker via Docker-composes as configured in the <em>docker-compose.yml</em> file.</p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">sudo docker-compose up -d
+</code></pre>
+</div>
+
+
+<figure class="wp-block-image"><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/318ecfe0-9387-4426-9747-efe43ddc5cff/Untitled.png" alt="Running Prometheus and Grafana on Docker via Docker-compose"/></figure>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="934" height="186" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-246.png" alt="Running Prometheus and Grafana on Docker via Docker-compose" class="wp-image-15424" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-246.png 934w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-246-300x60.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-246-768x153.png 768w" sizes="(max-width: 934px) 100vw, 934px" /><figcaption>Running Prometheus and Grafana on Docker via Docker-compose</figcaption></figure></div>
+
+
+<h2><span class="ez-toc-section" id="Securing_Grafana_with_NGINX_and_Lets_Encrypt"></span>Securing Grafana with NGINX and Let’s Encrypt<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Your Grafana dashboard at this point can be accessed and intercepted by attackers. How to secure the dashboard? You’ll need NGINX to act as a reverse proxy to route traffic to your domain name. At the same time, you’ll set up SSL certificates with Let’s Encrypt to authenticate your server.</p>
+
+
+<p class="related-links"><span class="related-links__text">Related:</span><a class="related-links__link" href="https://adamtheautomator.com/nginx-reverse-proxy-docker/">Create an NGINX Reverse Proxy in Docker</a></p>
+
+
+
+<p>Create another docker-compose config file called <em>docker-compose-nginx.yml</em> in your project’s root directory (<em>~/monitoring</em>), and add the code below to the file. </p>
+
+
+
+<p>The following code serves as NGINX and Certbot docker-compose service configurations, setting NGINX to listen to ports 80 for HTTP connections and 443 for HTTPS. </p>
+
+
+<p class="related-links"><span class="related-links__text">Related:</span><a class="related-links__link" href="https://adamtheautomator.com/nginx-to-redirect-http-to-https/">Activating NGINX to Redirect HTTP to HTTPS Traffic</a></p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="yaml" class="language-yaml">version: '3'
+
+services:
+# NGINX service
+  nginx:
+		# NGINX uses the latest image
+    image: nginx:latest
+    ports:
+      - 80:80
+      - 443:443
+		# NGINX service restart policy set to "always"
+    restart: always
+		# Persist and share NGINX configuration data 
+    volumes:
+      - ./nginx/conf/:/etc/nginx/conf.d/
+      - ./certbot/www:/var/www/certbot/
+      - ./certbot/conf/:/etc/nginx/ssl/
+# Certbot service
+  certbot:
+    image: certbot/certbot:latest
+		# Persist and share Certbot configuration data
+    volumes:
+      - ./certbot/www/:/var/www/certbot/
+      - ./certbot/conf/:/etc/letsencrypt/</code></pre>
+</div>
+
+
+<p>2. Next, create a file named <em>nginx.conf</em> in the <em>~/monitoring/nginx/conf</em> directory and add the configuration below to the <em>nginx.conf</em> file. </p>
+
+
+
+<p>The code snippet below configures NGINX as a reverse proxy to route incoming traffic port through the default port 80 to the Grafana port 3000. Be sure to replace all occurrences of <code>grafana.example.com</code> with your Grafana endpoint URL. </p>
+
+
+
+<blockquote class="wp-block-quote"><p><em>Be sure to replace all occurrences of <code>grafana.example.com</code> on each code and command through this tutorial with your Grafana endpoint URL.</em> </p><p></p></blockquote>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">server {
+				# Listen for incoming connections on port 80
+        listen 80 default_server;
+				# Set your Grafana endpoint URL
+        server_name grafana.example.com;
+        # Location to store certbot configurations
+        location ~ /.well-known/acme-challenge/ {
+           root /var/www/certbot;
+        }
+					 
+        location / {
+						# Assign incoming requests from port 80 to this URL
+            proxy_pass http://grafana.example.com:3000/;
+        }
+}</code></pre>
+</div>
+
+
+<p>3. Run the <code>docker-compose</code> command below to reload the NGINX container to apply the NGINX configurations (<code>docker-compose-nginx.yml</code>). </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">sudo docker-compose -f docker-compose-nginx.yml exec nginx nginx -s reload</code></pre>
+</div>
+
+
+<p>As soon as you run the command, you’ll get the following output. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="1514" height="60" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-247.png" alt="Reloading NGINX Container" class="wp-image-15425" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-247.png 1514w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-247-300x12.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-247-1024x41.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-247-768x30.png 768w" sizes="(max-width: 1514px) 100vw, 1514px" /><figcaption>Reloading NGINX Container</figcaption></figure></div>
+
+
+<p>4. Now, run the below command to run the Certbot container and create the certificates in the <em>/etc/letsencrypt/</em> directory. Be sure to change <code>grafana.example.com</code> with your domain name. </p>
+
+
+
+<p>You can access the certificates stored in the <em>/etc/letsencrypt/</em> directory locally in <em>/certbot/conf</em>. </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash"># Change grafana.example.com to your Grafana URL
+sudo docker-compose -f docker-compose-nginx.yml run \
+ --rm certbot certonly --webroot \
+ -w /var/www/certbot -d grafana.example.com</code></pre>
+</div>
+
+
+<p>Once the certificates are created, you’ll get the following output.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="1308" height="456" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-248.png" alt="Creating Certificates" class="wp-image-15426" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-248.png 1308w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-248-300x105.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-248-1024x357.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-248-768x268.png 768w" sizes="(max-width: 1308px) 100vw, 1308px" /><figcaption>Creating Certificates</figcaption></figure></div>
+
+
+<p>5. Open the <em>nginx.conf</em> file and add the following code to allow access to Grafana via HTTPS: </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">server {
+				# Listen for incoming connections on port 80
+        listen 80 default_server;
+				# Change grafana.example.com to your Grafana endpoint URL
+        server_name grafana.example.com;
+				# Return all HTTP requests to URL to HTTPS
+        return 301 https://grafana.example.com$request_uri;
+}
+
+server {
+				# Listen form incoming connections on port 443 via HTTPS
+        listen 443 ssl http2;
+				# SSL certificate and private key
+				ssl_certificate     /etc/nginx/ssl/live/grafana.example.com/fullchain.pem;
+        ssl_certificate_key /etc/nginx/ssl/live/grafana.example.com/privkey.pem;
+				# Change grafana.example.com to your Grafana endpoint URL
+        server_name grafana.example.com;
+        
+        location ~ /.well-known/acme-challenge/ {
+					 # Location to store certbot configurations
+           root /var/www/certbot;
+        }
+ 
+        location / {
+						# Assign incoming requests from port 80 to this URL
+            proxy_pass http://grafana.example.com:3000/;
+        }
+}</code></pre>
+</div>
+
+
+<p>6. Next, run the following command to apply the modified NGINX configurations. </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">sudo docker-compose -f docker-compose-nginx.yml exec nginx nginx -s reload</code></pre>
+</div>
+
+
+<p>7. Finally, open your favorite web browser and navigate to your domain name. This article uses the domain name <em>grafana.joeshiett.xyz</em>. You’ll get secure access to Grafana (login page) if all goes well, as shown below. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="1778" height="1402" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-249.png" alt="Accessing Grafana Securely with SSL Certificates" class="wp-image-15427" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-249.png 1778w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-249-300x237.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-249-1024x807.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-249-768x606.png 768w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-249-1536x1211.png 1536w" sizes="(max-width: 1778px) 100vw, 1778px" /><figcaption>Accessing Grafana Securely with SSL Certificates</figcaption></figure></div>
+
+
+<h2><span class="ez-toc-section" id="Creating_Visualization_in_Grafana"></span>Creating Visualization in Grafana<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>With everything set up and running, you’re ready to create your first visualization in Grafana to view your Docker metrics. But you’ll first have to log in to Grafana to access your Grafana dashboard.</p>
+
+
+
+<p>1. Log in to your Grafana with admin as the <strong>Username</strong> and <strong>Password</strong>. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="771" height="804" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-250.png" alt="Logging into Grafana Dashboard " class="wp-image-15428" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-250.png 771w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-250-288x300.png 288w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-250-768x801.png 768w" sizes="(max-width: 771px) 100vw, 771px" /><figcaption>Logging into Grafana Dashboard </figcaption></figure></div>
+
+
+<p>Once logged in, you’ll be on the Grafana home page shown below. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="1644" height="1178" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-251.png" alt="Viewing Grafana’s Home Page" class="wp-image-15429" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-251.png 1644w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-251-300x215.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-251-1024x734.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-251-768x550.png 768w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-251-1536x1101.png 1536w" sizes="(max-width: 1644px) 100vw, 1644px" /><figcaption>Viewing Grafana’s Home Page</figcaption></figure></div>
+
+
+<p>2. Click on the <strong>+</strong> icon (left toolbar) and choose <strong>Dashboard</strong> to access your Grafana dashboard to see options for creating a new dashboard. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="952" height="668" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-252.png" alt="Navigating to Grafana Dashboard" class="wp-image-15430" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-252.png 952w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-252-300x211.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-252-768x539.png 768w" sizes="(max-width: 952px) 100vw, 952px" /><figcaption>Navigating to Grafana Dashboard</figcaption></figure></div>
+
+
+<p>3. On the dashboard, click <strong>Add a new panel</strong> to create a panel where you can visualize your Docker metrics. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="1106" height="726" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-253.png" alt="Adding a New Panel" class="wp-image-15431" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-253.png 1106w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-253-300x197.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-253-1024x672.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-253-768x504.png 768w" sizes="(max-width: 1106px) 100vw, 1106px" /><figcaption>Adding a New Panel</figcaption></figure></div>
+
+
+<p>4. Now, click on the drop-down menu and select <strong>Prometheus</strong>, as shown below, to add Prometheus to the panel as a Data source. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="974" height="930" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-254.png" alt="Adding Prometheus Data Source" class="wp-image-15432" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-254.png 974w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-254-300x286.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-254-768x733.png 768w" sizes="(max-width: 974px) 100vw, 974px" /><figcaption>Adding Prometheus Data Source</figcaption></figure></div>
+
+
+<p>5. Add the following Docker metric query to the Metric browser field to get the different states of available Docker containers. </p>
+
+
+<div class="not-prose">
+<pre class="wp-block-code"><code lang="bash" class="language-bash">```bash
+engine_daemon_container_states_containers{}
+```</code></pre>
+</div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="1220" height="390" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-255.png" alt="Running Docker Metric Query " class="wp-image-15433" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-255.png 1220w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-255-300x96.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-255-1024x327.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-255-768x246.png 768w" sizes="(max-width: 1220px) 100vw, 1220px" /><figcaption>Running Docker Metric Query </figcaption></figure></div>
+
+
+<blockquote class="wp-block-quote"><p><em>To query for specific Docker state on Grafana, run the following queries: engine_daemon_container_states_containers{state=&#8221;running&#8221;} engine_daemon_container_states_containers{state=&#8221;paused&#8221;} engine_daemon_container_states_containers{state=&#8221;stopped&#8221;}</em></p></blockquote>
+
+
+
+<p>6. Next, click the drop-down menu (top-right of the page) to see other types of visualization you can choose. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="722" height="298" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-256.png" alt="Accessing Visualization Menu" class="wp-image-15434" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-256.png 722w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-256-300x124.png 300w" sizes="(max-width: 722px) 100vw, 722px" /><figcaption>Accessing Visualization Menu</figcaption></figure></div>
+
+
+<p>7. Choose your preferred visualization from the list, but this tutorial uses the <strong>Stat</strong> visualization. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="598" height="438" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-257.png" alt="Setting Stat Visualization " class="wp-image-15435" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-257.png 598w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-257-300x220.png 300w" sizes="(max-width: 598px) 100vw, 598px" /><figcaption>Setting Stat Visualization </figcaption></figure></div>
+
+
+<p>If you choose the <strong>Stat</strong> visualization, your new dashboard should look similar to the one below. </p>
+
+
+
+<p>For this tutorial, the number <strong>3</strong> represents three running containers, <strong>1</strong> represents one stopped container, and <strong>0</strong> represents no paused container. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="1652" height="1176" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-258.png" alt="Viewing Stat Visualization" class="wp-image-15436" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-258.png 1652w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-258-300x214.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-258-1024x729.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-258-768x547.png 768w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-258-1536x1093.png 1536w" sizes="(max-width: 1652px) 100vw, 1652px" /><figcaption>Viewing Stat Visualization</figcaption></figure></div>
+
+
+<p>8. Change the panel <strong>Title</strong> as you like under <strong>Panel options</strong> (right panel) and click on <strong>Save</strong> (top-right). The panel title is set to <strong>Docker States</strong> in this tutorial. </p>
+
+
+
+<p>After saving the title, a pop-up window appears where you’ll set a name for your dashboard (step nine). </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="606" height="612" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-259.png" alt="Saving the Panel Title" class="wp-image-15437" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-259.png 606w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-259-297x300.png 297w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-259-150x150.png 150w" sizes="(max-width: 606px) 100vw, 606px" /><figcaption>Saving the Panel Title</figcaption></figure></div>
+
+
+<p>9. Finally, name the dashboard as you like, but the dashboard is called <strong>Docker Metrics</strong> in this tutorial. Once you’re happy with the dashboard name, click on the <strong>Save</strong> button to save the dashboard. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="738" height="508" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-260.png" alt="Saving Dashboard" class="wp-image-15438" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-260.png 738w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-260-300x207.png 300w" sizes="(max-width: 738px) 100vw, 738px" /><figcaption>Saving Dashboard</figcaption></figure></div>
+
+
+<p>Your dashboard (<strong>Docker Metrics</strong>) should now be available on your Grafana Home page, as shown below. </p>
+
+
+
+<p>At this point, you now have a fully functional dashboard you can use to monitor your Docker metrics. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" width="1642" height="1186" src="https://adamtheautomator.com/wp-content/uploads/2022/05/image-261.png" alt="Dashboard available on Grafana Home page" class="wp-image-15439" srcset="https://adamtheautomator.com/wp-content/uploads/2022/05/image-261.png 1642w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-261-300x217.png 300w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-261-1024x740.png 1024w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-261-768x555.png 768w, https://adamtheautomator.com/wp-content/uploads/2022/05/image-261-1536x1109.png 1536w" sizes="(max-width: 1642px) 100vw, 1642px" /><figcaption>Dashboard available on Grafana Home page</figcaption></figure></div>
+
+
+<h2><span class="ez-toc-section" id="Conclusion"></span>Conclusion<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>In this tutorial, you learned how to export Docker metrics to Prometheus via the configured endpoint and made queries on Prometheus to display their values. You’ve also configured Prometheus as a data source on Grafana and finally created a sample dashboard to better view the values obtained from the metric query.</p>
+
+
+
+<p>To build on this newfound knowledge, why not set up alerts with <a href="https://grafana.com/docs/grafana/latest/datasources/alertmanager/" target="_blank" rel="noopener">Alertmanager</a>, and set up both Prometheus and Grafana on a separate dedicated Ubuntu server? You can also configure more dashboards to your heart’s content so you can view more metrics on your Grafana Home page.</p>
+    </div>
+    <div class="w-full mt-0 lg:mt-12 prose prose-slate dark:prose-invert dark:bg-slate-800 pl-2 pr-2 2xl:pr-0 lg:pl-0 max-w-[350px] flex flex-col items-center justify-self-center mb-4 lg:mb-0">
+  <div class="mb-6 min-w-[200px] max-w-[612px] border-2 text-slate-800 dark:text-slate-300 border-solid rounded border-slate-400 dark:border-slate-200 shadow-lg dark:shadow-[0_10px_15px_-3px_rgb(0,0,0,1),0_4px_6px_-4px_rgb(0,0,0,1)] p-4">
+  <p class="pt-0 mt-0 mb-4 text-center">Hate ads? Want to support the writer? Get many of our tutorials packaged as an ATA Guidebook.</p>
+  <a href="https://adamtheautomator.com/ata-guidebooks/" class="block w-full pt-2 pb-2 pl-2 pr-2 mt-auto mb-2 text-base font-bold text-center text-cyan-900 no-underline bg-cyan-300 rounded shadow-lg hover:bg-cyan-200 hover:text-cyan-800">Explore ATA Guidebooks</a>
+</div></div>    <div class="article__footer justify-self-center w-full lg:col-span-3 prose prose-slate dark:prose-invert dark:bg-slate-800 pb-6 lg:pb-12 break-words pr-2 pl-2 lg:pr-0 lg:pl-0 prose-code:after:content-[''] prose-code:before:content-[''] prose-code:bg-slate-300 dark:prose-code:bg-slate-700 dark:prose-code:text-white prose-code:px-1 prose-code:py-1 prose-code:rounded prose-img:mb-2 prose-figcaption:text-slate-600 dark:prose-figcaption:text-slate-400 prose-img:shadow-lg dark:prose-img:shadow-[0_10px_15px_-3px_rgb(0,0,0,1),0_4px_6px_-4px_rgb(0,0,0,1)] dark:prose-hr:border-slate-400 prose-hr:border-slate-600 max-w-lg lg:max-w-screen-lg">
+      <div class="mt-8 mb-8 not-prose">
+  <h2 class="mb-8 text-2xl font-bold text-center dark:text-white lg:text-left">More from ATA Learning & Partners</h2>
+  <ul class="flex flex-col w-full items-center lg:items-stretch lg:justify-between p-0 m-0 list-none lg:flex-row gap-x-4">
+    <li class="flex max-w-[304px] w-full mb-4 bg-white border-2 rounded-lg shadow-lg dark:shadow-[0_10px_15px_-3px_rgb(0,0,0,1),0_4px_6px_-4px_rgb(0,0,0,1)] lg:mb-0 border-slate-200 dark:border-slate-500 text-slate-800 dark:text-white dark:bg-slate-900 dark:hover:bg-slate-400 dark:hover:text-900">
+      <a href="https://adamtheautomator.com/resources/" target="_blank" class="w-full ad-related__link">
+        <img style="height: 200px;" class="object-cover w-full rounded-tr-lg rounded-tl-lg" alt="Recommended Resources!" height="576" width="1024" loading="lazy" src="https://adamtheautomator.com/wp-content/uploads/2021/03/Resources-1024x576.jpg " />
+        <h3 class="p-2 text-lg text-center font-bold">Recommended Resources!</h3>
+        <p class="p-4 pt-4 pb-6 text-center">Recommended Resources for Training, Information Security, Automation, and more!</p>
+      </a>
+    </li>
+    <li class="flex max-w-[304px] w-full mb-4 bg-white border-2 rounded-lg shadow-lg dark:shadow-[0_10px_15px_-3px_rgb(0,0,0,1),0_4px_6px_-4px_rgb(0,0,0,1)] lg:mb-0 border-slate-200 dark:border-slate-500 text-slate-800 dark:text-white dark:bg-slate-900 dark:hover:bg-slate-400 dark:hover:text-900">
+      <a href="https://adamtheautomator.com/friends/" target="_blank" class="w-full ad-related__link">
+        <img style="height: 200px;" class="object-cover w-full rounded-tr-lg rounded-tl-lg" alt="Get Paid to Write!" height="200" width="300" loading="lazy" src="https://adamtheautomator.com/wp-content/uploads/2022/04/ata-friends-resized.jpg" />
+        <h3 class="p-2 text-lg text-center font-bold">Get Paid to Write!</h3>
+        <p class="p-4 pt-4 pb-6 text-center">ATA Learning is always seeking instructors of all experience levels. Regardless if you’re a junior admin or system architect, you have something to share. Why not write on a platform with an existing audience and share your knowledge with the world?</p>
+      </a>
+    </li>
+    <li class="flex max-w-[304px] w-full mb-4 bg-white border-2 rounded-lg shadow-lg dark:shadow-[0_10px_15px_-3px_rgb(0,0,0,1),0_4px_6px_-4px_rgb(0,0,0,1)] lg:mb-0 border-slate-200 dark:border-slate-500 text-slate-800 dark:text-white dark:bg-slate-900 dark:hover:bg-slate-400 dark:hover:text-900">
+      <a href="https://adamtheautomator.com/ata-guidebooks/" target="_blank" class="w-full ad-related__link">
+        <img style="height: 200px;" class="object-cover w-full rounded-tr-lg rounded-tl-lg" alt="ATA Learning Guidebooks" height="200" width="300" loading="lazy" src="https://adamtheautomator.com/wp-content/uploads/2021/11/ATA-GuideBooks-Post-Footer.png" />
+        <h3 class="p-2 text-lg text-center font-bold">ATA Learning Guidebooks</h3>
+        <p class="p-4 pt-4 pb-6 text-center">ATA Learning is known for its high-quality written tutorials in the form of blog posts. Support ATA Learning with ATA Guidebook PDF eBooks available offline and with no ads!</p>
+      </a>
+    </li>
+  </ul>
+</div>
+      <div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3>Continue reading with these similar tutorials</h3>
+</div>      <div id="hyvor-talk-view"></div>
+<script type="text/javascript">
+  var HYVOR_TALK_WEBSITE = 3647;
+  var HYVOR_TALK_CONFIG = {
+    url: false,
+    id: 15420,
+    title: "The Essential Guide to Grafana Docker Monitoring",
+    authorEmail: "am9zZXBoZXNoaWV0dEBnbWFpbC5jb20=",
+    palette: palette
+  };
+</script>
+<script async type="text/javascript" src="https://talk.hyvor.com/web-api/embed.js"></script>    </div>
+  </article><!-- /article -->
+    </div><footer role="contentinfo" id="footer" class="bg-slate-800 dark:bg-slate-900 w-full min-h-[150px] flex flex-col items-center mt-auto">
+	<div class="flex flex-col justify-between w-full pt-4 pb-4 pl-2 pl-6 pr-2 pr-6 mt-0 mb-auto 2xl:pl-0 2xl:pr-0 upper-content lg:flex-row max-w-screen-2xl text-slate-400 2xl:pl-0 2xl:pr-0">
+    <div class="flex flex-col mb-8 lg:mb-0 min-w-[25%]"><div id="nav_menu-5" class="widget widget_nav_menu"><h2 class="pb-4 text-lg font-bold tracking-wide uppercase">Categories</h2><div class="menu-category-tag-menu-container"><ul id="menu-category-tag-menu" class="menu"><li id="menu-item-13151" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-13151"><a href="https://adamtheautomator.com/category/it-ops/">IT Ops</a></li>
+<li id="menu-item-13147" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13147"><a href="https://adamtheautomator.com/category/cloud/">Cloud</a></li>
+<li id="menu-item-13148" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13148"><a href="https://adamtheautomator.com/category/devops/">DevOps</a></li>
+<li id="menu-item-13149" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13149"><a href="https://adamtheautomator.com/category/home-ops/">Home Ops</a></li>
+<li id="menu-item-13150" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13150"><a href="https://adamtheautomator.com/category/infosec/">Information Security</a></li>
+<li id="menu-item-13152" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13152"><a href="https://adamtheautomator.com/category/software-development/">Software Development</a></li>
+</ul></div></div></div>
+    <div class="flex flex-col mb-8 lg:mb-0 min-w-[25%]"><div id="nav_menu-4" class="widget widget_nav_menu"><h2 class="pb-4 text-lg font-bold tracking-wide uppercase">Site</h2><div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2678"><a href="https://adamtheautomator.com/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-13144"><a href="https://adamtheautomator.com/tutorials/">Tutorials</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13145"><a href="https://adamtheautomator.com/ata-guidebooks/">Guidebooks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13146"><a href="https://adamtheautomator.com/author/">Instructors</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2681"><a href="https://adamtheautomator.com/friends/">Get Paid to Write</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="https://adamtheautomator.com/advertising/">Advertising</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7325"><a href="https://adamtheautomator.com/resources/">Recommended Resources</a></li>
+</ul></div></div></div>
+    <div class="flex flex-col mb-8 lg:mb-0 min-w-[25%]"></div>
+    <div class="flex flex-col min-w-[25%]"></div>
+</div>
+<div class="w-full pl-2 pr-2 2xl:pl-0 2xl:pr-0 copyright bg-slate-700 dark:bg-slate-800">
+    <div class="w-full pt-2 pb-2 m-auto text-sm text-left text-center max-w-screen-2xl text-slate-200 dark:text-slate-300 lg:text-left">
+        Copyright 2022&copy; ATA Learning | <a class="hover:text-white" href="https://adamtheautomator.com/privacy/">Privacy Policy</a>
+    </div>
+</div></footer><!-- /footer -->
+        <div id="mailchimp-top-bar" class="mctb mctb-sticky mctb-position-top mctb-medium">
+            <!-- Mailchimp Top Bar v1.5.5 - https://wordpress.org/plugins/mailchimp-top-bar/ -->
+            <div class="mctb-bar" >
+                <form method="post" >
+					                    <label class="mctb-label" for="mailchimp-top-bar__email">Don't be left behind with the ATA Learning Newsletter!</label>
+					                    <input type="email" name="email"
+                           placeholder="Your email address"
+                           class="mctb-email" required id="mailchimp-top-bar__email"/>
+                    <input type="text" name="email_confirm" placeholder="Confirm your email" value="" autocomplete="off"
+                           tabindex="-1" class="mctb-email-confirm"/>
+					                    <input type="submit" value="Subscribe Today!"
+                           class="mctb-button"/>
+					                    <input type="hidden" name="_mctb" value="1"/>
+                    <input type="hidden" name="_mctb_no_js" value="1"/>
+                    <input type="hidden" name="_mctb_timestamp" value="1660065629"/>
+                </form>
+				            </div>
+            <!-- / Mailchimp Top Bar -->
+        </div>
+		<script data-no-optimize='1' data-cfasync='false' id='cls-insertion-9920373'>!function(){"use strict";var t=function(t,e){return null==t||t!=t?e:t},e=function(t){var e=t.offsetHeight,n=t.offsetWidth,i=t.getBoundingClientRect(),o=document.body,r=document.documentElement,a=window.pageYOffset||r.scrollTop||o.scrollTop,l=window.pageXOffset||r.scrollLeft||o.scrollLeft,s=r.clientTop||o.clientTop||0,c=r.clientLeft||o.clientLeft||0,d=Math.round(i.top+a-s),u=Math.round(i.left+l-c);return{top:d,left:u,bottom:d+e,right:u+n,width:n,height:e}},n=function(t,e){return n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])},n(t,e)};function i(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Class extends value "+String(e)+" is not a constructor or null");function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)}var o=function(){return o=Object.assign||function(t){for(var e,n=1,i=arguments.length;n<i;n++)for(var o in e=arguments[n])Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o]);return t},o.apply(this,arguments)};function r(t){var e="function"==typeof Symbol&&Symbol.iterator,n=e&&t[e],i=0;if(n)return n.call(t);if(t&&"number"==typeof t.length)return{next:function(){return t&&i>=t.length&&(t=void 0),{value:t&&t[i++],done:!t}}};throw new TypeError(e?"Object is not iterable.":"Symbol.iterator is not defined.")}function a(t,e){var n="function"==typeof Symbol&&t[Symbol.iterator];if(!n)return t;var i,o,r=n.call(t),a=[];try{for(;(void 0===e||e-- >0)&&!(i=r.next()).done;)a.push(i.value)}catch(t){o={error:t}}finally{try{i&&!i.done&&(n=r.return)&&n.call(r)}finally{if(o)throw o.error}}return a}function l(t,e,n){if(n||2===arguments.length)for(var i,o=0,r=e.length;o<r;o++)!i&&o in e||(i||(i=Array.prototype.slice.call(e,0,o)),i[o]=e[o]);return t.concat(i||Array.prototype.slice.call(e))}var s,c=function(){return/Windows NT|Macintosh/i.test(navigator.userAgent)},d=function(t){try{return{valid:!0,elements:document.querySelectorAll(t)}}catch(t){return o({valid:!1},t)}},u=function(t){return""===t?{valid:!0}:d(t)},p=function(){function t(){this._clsGlobalData=window.adthriveCLS}return Object.defineProperty(t.prototype,"enabled",{get:function(){return this._clsGlobalData&&this._clsGlobalData.siteAds},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"siteAds",{get:function(){return this._clsGlobalData.siteAds},set:function(t){this._clsGlobalData.siteAds=t},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"disableAds",{get:function(){return this._clsGlobalData.disableAds},set:function(t){this._clsGlobalData.disableAds=t},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"enabledLocations",{get:function(){return this._clsGlobalData.enabledLocations},set:function(t){this._clsGlobalData.enabledLocations=t},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"injectedFromPlugin",{get:function(){return this._clsGlobalData.injectedFromPlugin},set:function(t){this._clsGlobalData.injectedFromPlugin=t},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"injectedFromSiteAds",{get:function(){return this._clsGlobalData.injectedFromSiteAds},set:function(t){this._clsGlobalData.injectedFromSiteAds=t},enumerable:!1,configurable:!0}),t.prototype.overwriteInjectedSlots=function(t){this._clsGlobalData.injectedSlots=t},t.prototype.setInjectedSlots=function(t){this._clsGlobalData.injectedSlots.push(t)},Object.defineProperty(t.prototype,"injectedSlots",{get:function(){return this._clsGlobalData.injectedSlots},enumerable:!1,configurable:!0}),t.prototype.setInjectedScripts=function(t){this._clsGlobalData.injectedScripts=this._clsGlobalData.injectedScripts||[],this._clsGlobalData.injectedScripts.push(t)},Object.defineProperty(t.prototype,"getInjectedScripts",{get:function(){return this._clsGlobalData.injectedScripts},enumerable:!1,configurable:!0}),t.prototype.setExperiment=function(t,e,n){void 0===n&&(n=!1),this._clsGlobalData.experiments=this._clsGlobalData.experiments||{},this._clsGlobalData.siteExperiments=this._clsGlobalData.siteExperiments||{},(n?this._clsGlobalData.siteExperiments:this._clsGlobalData.experiments)[t]=e},t.prototype.getExperiment=function(t,e){void 0===e&&(e=!1);var n=e?this._clsGlobalData.siteExperiments:this._clsGlobalData.experiments;return n&&n[t]},Object.defineProperty(t.prototype,"branch",{get:function(){return this._clsGlobalData.branch},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"bucket",{get:function(){return this._clsGlobalData.bucket},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"videoDisabledFromPlugin",{get:function(){return this._clsGlobalData.videoDisabledFromPlugin},set:function(t){this._clsGlobalData.videoDisabledFromPlugin=t},enumerable:!1,configurable:!0}),Object.defineProperty(t.prototype,"targetDensityLog",{get:function(){return this._clsGlobalData.targetDensityLog},set:function(t){this._clsGlobalData.targetDensityLog=t},enumerable:!1,configurable:!0}),t}(),h=function(){function t(){}return t.getScrollTop=function(){return(window.pageYOffset||document.documentElement.scrollTop)-(document.documentElement.clientTop||0)},t.shufflePlaylist=function(t){for(var e,n,i=t.length;0!==i;)n=Math.floor(Math.random()*t.length),e=t[i-=1],t[i]=t[n],t[n]=e;return t},t.playerViewable=function(t){var e=t.getBoundingClientRect();return window.innerHeight>e.top+e.height/2},t.playerVisible=function(t){var e=t.getBoundingClientRect();return window.innerHeight>e.top},t.createQueryString=function(t){return Object.keys(t).map((function(e){return"".concat(e,"=").concat(t[e])})).join("&")},t.createEncodedQueryString=function(t){return Object.keys(t).map((function(e){return"".concat(e,"=").concat(encodeURIComponent(t[e]))})).join("&")},t.setMobileLocation=function(t){var e,n;return"top-left"===(t=t||"bottom-right")?t="adthrive-collapse-top-left":"top-right"===t?t="adthrive-collapse-top-right":"bottom-left"===t?t="adthrive-collapse-bottom-left":"bottom-right"===t?t="adthrive-collapse-bottom-right":"top-center"===t&&(e=navigator.userAgent,n=/Tablet|iPad|Playbook|Nook|webOS|Kindle|Android (?!.*Mobile).*Safari/i.test(e),t=/Mobi|iP(hone|od)|Opera Mini/i.test(e)&&!n?"adthrive-collapse-top-center":"adthrive-collapse-bottom-right"),t},t}(),y=function(e){this._clsOptions=e,this.removeVideoTitleWrapper=t(this._clsOptions.siteAds.adOptions.removeVideoTitleWrapper,!1);var n=this._clsOptions.siteAds.videoPlayers;this.footerSelector=t(n&&n.footerSelector,""),this.players=t(n&&n.players.map((function(t){return t.mobileLocation=h.setMobileLocation(t.mobileLocation),t})),[]),this.contextualSettings=n&&n.contextual},f=function(t){this.mobileStickyPlayerOnPage=!1,this.playlistPlayerAdded=!1,this.contextualPlayerAdded=!1,this.sekindoPlayerAdded=!1,this.footerSelector="",this.removeVideoTitleWrapper=!1,this.videoAdOptions=new y(t),this.players=this.videoAdOptions.players,this.contextualSettings=this.videoAdOptions.contextualSettings,this.removeVideoTitleWrapper=this.videoAdOptions.removeVideoTitleWrapper,this.footerSelector=this.videoAdOptions.footerSelector},m=function(t){function e(e){var n=t.call(this)||this;return n._probability=e,n}return i(e,t),e.prototype.get=function(){if(this._probability<0||this._probability>1)throw new Error("Invalid probability");return Math.random()<this._probability},e}((function(){})),_=function(){function t(){this._clsOptions=new p}return t.prototype.setExperimentKey=function(t){void 0===t&&(t=!1),this._clsOptions.setExperiment(this.key,this.result,t)},t}(),g=function(){function t(){}return t.prototype.info=function(t,e){for(var n=[],i=2;i<arguments.length;i++)n[i-2]=arguments[i];this.call.apply(this,l([console.info,t,e],a(n),!1))},t.prototype.warn=function(t,e){for(var n=[],i=2;i<arguments.length;i++)n[i-2]=arguments[i];this.call.apply(this,l([console.warn,t,e],a(n),!1))},t.prototype.error=function(t,e){for(var n=[],i=2;i<arguments.length;i++)n[i-2]=arguments[i];this.call.apply(this,l([console.error,t,e],a(n),!1)),this.sendErrorLogToCommandQueue.apply(this,l([t,e],a(n),!1))},t.prototype.event=function(t,e){for(var n=[],i=2;i<arguments.length;i++)n[i-2]=arguments[i];this.info(t,e)},t.prototype.sendErrorLogToCommandQueue=function(t,e){for(var n=[],i=2;i<arguments.length;i++)n[i-2]=arguments[i];window.adthrive=window.adthrive||{},window.adthrive.cmd=window.adthrive.cmd||[],window.adthrive.cmd.push(function(){void 0!==window.adthrive.logError&&"function"==typeof window.adthrive.logError&&window.adthrive.logError(t,e,n)}.bind(t,e,n))},t.prototype.call=function(t,e,n){for(var i=[],o=3;o<arguments.length;o++)i[o-3]=arguments[o];var r=["%c".concat(e,"::").concat(n," ")],s=["color: #999; font-weight: bold;"];i.length>0&&"string"==typeof i[0]&&r.push(i.shift()),s.push.apply(s,l([],a(i),!1));try{Function.prototype.apply.call(t,console,l([r.join("")],a(s),!1))}catch(t){return void console.error(t)}},t}(),v=new g,b=function(t){function e(){var e=t.call(this)||this;return e._result=!1,e._choices=[{choice:!0},{choice:!1}],e.key="smhd100",e._result=e.run(),e.setExperimentKey(),e}return i(e,t),Object.defineProperty(e.prototype,"result",{get:function(){return this._result},enumerable:!1,configurable:!0}),e.prototype.run=function(){return new m(.1).get()},e}(_),S=[[728,90],[300,250],[300,600],[320,50],[970,250],[160,600],[300,1050],[336,280],[970,90],[300,50],[320,100],[468,60],[250,250],[120,240],[1,1],[300,300],[552,334],[300,420],[728,250],[320,300],[300,390]],P=new Map([["Footer",1],["Header",2],["Sidebar",3],["Content",4],["Recipe",5],["Sidebar_sticky",6],["Below Post",7]]),A=function(t,e){var n=function(t){var e=t.clientWidth;if(getComputedStyle){var n=getComputedStyle(t,null);e-=parseFloat(n.paddingLeft||"0")+parseFloat(n.paddingRight||"0")}return e}(e),i=t.sticky&&"Sidebar"===t.location;return t.sizes.filter((function(e){var o=!t.autosize||(e[0]<=n||e[0]<=320),r=!i||e[1]<=window.innerHeight-100;return o&&r}))},E=function(t){return S.filter((function(e){var n=a(e,2),i=n[0],o=n[1];return t.some((function(t){var e=a(t,2),n=e[0],r=e[1];return i===n&&o===r}))}))},w=function(t,e,n,i){var o=a(e,2),r=o[0],l=o[1];return!("Footer"===t&&"phone"===n&&320===r&&100===l||"Header"===t&&l>100&&i.result)},D=function(t){var e,n,i=c()?"desktop":"mobile";this.siteExperiments=null===(n=null===(e=t.siteAds)||void 0===e?void 0:e.siteExperiments)||void 0===n?void 0:n.filter((function(t){return function(t,e){if(!t)return!1;var n=!!t.enabled,i=null===t.dateStart||Date.now()>=t.dateStart,o=null===t.dateEnd||Date.now()<=t.dateEnd,r=null===t.selector||""!==t.selector&&!!document.querySelector(t.selector),a="mobile"===t.platform&&"mobile"===e,l="desktop"===t.platform&&"desktop"===e,s=null===t.platform||"all"===t.platform||a||l;return n&&i&&o&&r&&s}(t,i)}))},O=function(t){this.clsOptions=t,this.enabledLocations=["Below_Post","Content","Recipe","Sidebar"],this.site=new D(t)};!function(t){t.Desktop="desktop",t.Mobile="mobile"}(s||(s={}));var M,C,k="250px",I=function(){function n(t,e){this._clsOptions=t,this._adInjectionMap=e,this._totalContentInserted=0,this._recipeCount=0,this._mainContentHeight=0,this._mainContentDiv=null,this._totalAvailableElements=[],this._minDivHeight=250,this._densityDevice=s.Desktop,this._pubLog={onePerViewport:!1,targetDensity:0,targetDensityUnits:0,combinedMax:0},this._densityMax=.99,this._smallerIncrementAttempts=0,this._absoluteMinimumSpacingByDevice=250,this._usedAbsoluteMinimum=!1,this._infPageEndOffset=0,this.locationMaxLazySequence=new Map([["Recipe",5]]),this.locationToMinHeight={Below_Post:k,Content:k,Recipe:k,Sidebar:k};var n=this._clsOptions.siteAds.breakpoints,i=n.tablet,o=n.desktop;this._device=function(t,e){var n=window.innerWidth;return n>=e?"desktop":n>=t?"tablet":"phone"}(i,o),this._config=new O(t),this._clsOptions.enabledLocations=this._config.enabledLocations}return n.prototype.start=function(){var e,n,i,o=this;try{!function(t){var e=document.body,n="adthrive-device-".concat(t);if(!e.classList.contains(n))try{e.classList.add(n)}catch(t){document.createElement("_")}}(this._device);var r=(e=this._device,n=this._clsOptions.siteAds.adUnits,i=new b,n.filter((function(t){return void 0!==t.dynamic&&t.dynamic.enabled})).map((function(n){var o=n.location.replace(/\s+/g,"_");return{auctionPriority:P.get(o)||8,location:o,sequence:t(n.sequence,1),sizes:E(n.adSizes).filter((function(t){return w(n.location,t,e,i)})),devices:n.devices,pageSelector:t(n.dynamic.pageSelector,"").trim(),elementSelector:t(n.dynamic.elementSelector,"").trim(),position:t(n.dynamic.position,"beforebegin"),max:Math.floor(t(n.dynamic.max,0)),spacing:t(n.dynamic.spacing,0),skip:Math.floor(t(n.dynamic.skip,0)),every:Math.max(Math.floor(t(n.dynamic.every,1)),1),classNames:n.dynamic.classNames||[],sticky:"Footer"===n.location||n.sticky,stickyOverlapSelector:t(n.stickyOverlapSelector,"").trim(),autosize:n.autosize,special:t(n.targeting,[]).filter((function(t){return"special"===t.key})).reduce((function(t,e){return t.concat.apply(t,l([],a(e.value),!1))}),[]),lazy:t(n.dynamic.lazy,!1),lazyMax:t(n.dynamic.lazyMax,2),lazyMaxDefaulted:0!==n.dynamic.lazyMax&&!n.dynamic.lazyMax}}))).filter((function(t){return o._locationEnabled(t)})).filter((function(t){return function(t,e){return t.devices.includes(e)}(t,o._device)})).filter((function(t){return 0===(e=t).pageSelector.length||null!==document.querySelector(e.pageSelector);var e}));this.inject(r).forEach((function(t){return o._clsOptions.setInjectedSlots(t)}))}catch(t){}},n.prototype.inject=function(e,n){void 0===n&&(n=document);var i=this._clsOptions.siteAds,o=t(i.adDensityEnabled,!0),r=i.adDensityLayout&&o,s=e.filter((function(t){return r?"Content"!==t.location:t})),c=e.filter((function(t){return r?"Content"===t.location:null}));return l(l([],a(s.length?this._injectNonDensitySlots(s,n):[]),!1),a(c.length?this._injectDensitySlots(c,n):[]),!1)},n.prototype._injectNonDensitySlots=function(t,n){var i,o,s=this;void 0===n&&(n=document);var c=[],d=[];try{for(var u=r(t),p=u.next();!p.done;p=u.next()){var h=p.value,y=0,f=0,m=0;h.spacing>0&&(y=window.innerHeight*h.spacing,f=y);var _=this._repeatDynamicAds(h),g=this.getElements(h.elementSelector,n);h.skip;for(var v=function(t){if(m+1>_.length)return"break";var i=g[t];if(y>0){var o=e(i).bottom;if(o<=f)return"continue";f=o+y}var r=_[m],s="".concat(r.location,"_").concat(r.sequence);c.some((function(t){return t.name===s}))&&(m+=1);var u=b.getDynamicElementId(r),p="adthrive-".concat(h.location.replace("_","-").toLowerCase()),v=l([p,"".concat(p,"-").concat(h.sequence)],a(h.classNames),!1),S=b.addAd(i,u,h.position,v);if(S){var P=A(r,S);if(P.length){var E={clsDynamicAd:h,dynamicAd:r,element:S,sizes:P,name:s,infinite:n!==document};c.push(E),d.push({location:r.location,element:S}),"Recipe"===h.location&&++b._recipeCount,m+=1}i=S}},b=this,S=h.skip;S<g.length;S+=h.every){if("break"===v(S))break}}}catch(t){i={error:t}}finally{try{p&&!p.done&&(o=u.return)&&o.call(u)}finally{if(i)throw i.error}}return d.forEach((function(t){var e=t.location;t.element.style.minHeight=s.locationToMinHeight[e]})),c},n.prototype._injectDensitySlots=function(t,e){void 0===e&&(e=document);try{this._calculateMainContentHeightAndAllElements(t,e)}catch(t){return[]}var n=this._getDensitySettings(t,e),i=n.onePerViewport,o=n.targetAll,r=n.targetDensityUnits,a=n.combinedMax,l=n.numberOfUnits;return this._absoluteMinimumSpacingByDevice=i?window.innerHeight:this._absoluteMinimumSpacingByDevice,l?(this._adInjectionMap.filterUsed(),this._findElementsForAds(l,i,o,a,r,e),this._insertAds()):[]},n.prototype._getDensitySettings=function(t,e){void 0===e&&(e=document),this._densityDevice="desktop"===this._device?s.Desktop:s.Mobile;var n=this._clsOptions.siteAds.adDensityLayout,i=this._determineOverrides(n.pageOverrides),o=i.length?i[0]:n[this._densityDevice],r=o.adDensity,c=o.onePerViewport,d=this._getTargetDensityUnits(r),u=this._shouldTargetAllEligible(r),p=this._getCombinedMax(t,e),h=Math.min.apply(Math,l([],a(l([this._totalAvailableElements.length,d],a(p>0?[p]:[]),!1)),!1));return this._pubLog={onePerViewport:c,targetDensity:r,targetDensityUnits:d,combinedMax:p},{onePerViewport:c,targetAll:u,targetDensityUnits:d,combinedMax:p,numberOfUnits:h}},n.prototype._determineOverrides=function(t){var e=this;return t.filter((function(t){var e=u(t.pageSelector);return""===t.pageSelector||e.elements&&e.elements.length})).map((function(t){return t[e._densityDevice]}))},n.prototype._shouldTargetAllEligible=function(t){return t===this._densityMax},n.prototype._getTargetDensityUnits=function(t){return Math.floor(t*this._mainContentHeight/(1-t)/this._minDivHeight)-this._recipeCount},n.prototype._getCombinedMax=function(e,n){return void 0===n&&(n=document),t(e.filter((function(t){var e;try{e=n.querySelector(t.elementSelector)}catch(t){}return e})).map((function(t){return Number(t.max)+Number(t.lazyMaxDefaulted?0:t.lazyMax)})).sort((function(t,e){return e-t}))[0],0)},n.prototype._elementLargerThanMainContent=function(t){return t.offsetHeight>=this._mainContentHeight&&this._totalAvailableElements.length>1},n.prototype._elementDisplayNone=function(t){var e=window.getComputedStyle(t,null).display;return e&&"none"===e||"none"===t.style.display},n.prototype._isBelowMaxes=function(t,e){return this._adInjectionMap.map.length<t&&this._adInjectionMap.map.length<e},n.prototype._findElementsForAds=function(t,e,n,i,o,a){var l=this;void 0===a&&(a=document),this._clsOptions.targetDensityLog={onePerViewport:e,combinedMax:i,targetDensityUnits:o,targetDensityPercentage:this._pubLog.targetDensity,mainContentHeight:this._mainContentHeight,recipeCount:this._recipeCount,numberOfEls:this._totalAvailableElements.length};var s=function(t){var e,c;try{for(var d=r(l._totalAvailableElements),u=d.next();!u.done;u=d.next()){var p=u.value,h=p.dynamicAd,y=p.element;if(l._logDensityInfo(y,h.elementSelector,t),!l._elementLargerThanMainContent(y)&&!l._elementDisplayNone(y)){if(!l._isBelowMaxes(i,o))break;l._checkElementSpacing({dynamicAd:h,element:y,insertEvery:t,targetAll:n,target:a})}}}catch(t){e={error:t}}finally{try{u&&!u.done&&(c=d.return)&&c.call(d)}finally{if(e)throw e.error}}!l._usedAbsoluteMinimum&&l._smallerIncrementAttempts<5&&(++l._smallerIncrementAttempts,s(l._getSmallerIncrement(t)))},c=this._getInsertEvery(t,e,o);s(c)},n.prototype._getSmallerIncrement=function(t){var e=.6*t;return e<=this._absoluteMinimumSpacingByDevice&&(e=this._absoluteMinimumSpacingByDevice,this._usedAbsoluteMinimum=!0),e},n.prototype._insertAds=function(){var t=this,e=[];return this._adInjectionMap.filterUsed(),this._adInjectionMap.map.forEach((function(n,i){var o=n.el;n.coords;var r=n.dynamicAd,a=n.target,l=Number(r.sequence)+i,s=r.max,c=r.lazy&&l>s;r.sequence=l,r.lazy=c;var d=t._addContentAd(o,r,a);d&&(r.used=!0,e.push(d))})),e},n.prototype._getInsertEvery=function(t,e,n){var i=this._absoluteMinimumSpacingByDevice;return this._moreAvailableElementsThanUnitsToInject(n,t)?(this._usedAbsoluteMinimum=!1,i=this._useWiderSpacing(n,t)):(this._usedAbsoluteMinimum=!0,i=this._useSmallestSpacing(e)),e&&window.innerHeight>i?window.innerHeight:i},n.prototype._useWiderSpacing=function(t,e){return this._mainContentHeight/Math.min(t,e)},n.prototype._useSmallestSpacing=function(t){return t&&window.innerHeight>this._absoluteMinimumSpacingByDevice?window.innerHeight:this._absoluteMinimumSpacingByDevice},n.prototype._moreAvailableElementsThanUnitsToInject=function(t,e){return this._totalAvailableElements.length>t||this._totalAvailableElements.length>e},n.prototype._logDensityInfo=function(t,e,n){var i=this._pubLog;i.onePerViewport,i.targetDensity;i.targetDensityUnits;i.combinedMax,this._totalAvailableElements.length},n.prototype._checkElementSpacing=function(t){var e=t.dynamicAd,n=t.element,i=t.insertEvery,r=t.targetAll,a=t.target,l=void 0===a?document:a;(this._isFirstAdInjected()||this._hasProperSpacing(n,e,r,i))&&(++this._totalContentInserted,this._markSpotForContentAd(n,o({},e),l))},n.prototype._isFirstAdInjected=function(){return!this._adInjectionMap.map.length},n.prototype._markSpotForContentAd=function(t,e,n){void 0===n&&(n=document);var i="beforebegin"===e.position||"afterbegin"===e.position;this._adInjectionMap.add(t,this._getElementCoords(t,i),e,n),this._adInjectionMap.sort()},n.prototype._hasProperSpacing=function(t,e,n,i){var o="beforebegin"===e.position||"afterbegin"===e.position,r="beforeend"===e.position||"afterbegin"===e.position,a=n||this._isElementFarEnoughFromOtherAdElements(t,i,o),l=r||this._isElementNotInRow(t,o),s=-1===t.id.indexOf("AdThrive_Below_Post");return a&&l&&s},n.prototype._isElementFarEnoughFromOtherAdElements=function(t,e,n){for(var i=this._getElementCoords(t,n),o=!1,r=0;r<this._adInjectionMap.map.length;r++){var a=this._adInjectionMap.map[r].coords,l=this._adInjectionMap.map[r+1]&&this._adInjectionMap.map[r+1].coords;if(o=i-e>a&&(!l||i+e<l))break}return o},n.prototype._isElementNotInRow=function(t,e){var n=t.previousElementSibling,i=t.nextElementSibling,o=e?!n&&i||n&&t.tagName!==n.tagName?i:n:i;return!(!o||0!==t.getBoundingClientRect().height)||(!o||t.getBoundingClientRect().top!==o.getBoundingClientRect().top)},n.prototype._calculateMainContentHeightAndAllElements=function(t,e){void 0===e&&(e=document);var n=this._setMainContentAndElements(t,e);this._mainContentDiv=n;var i=this._mainContentDiv.querySelector("div #comments, section .comments");this._mainContentHeight=i?this._mainContentDiv.offsetHeight-i.offsetHeight:this._mainContentDiv.offsetHeight},n.prototype._setMainContentAndElements=function(t,e){void 0===e&&(e=document);var n=this._getElementsFromDynamicAdEntry(t,e);if(0===n.length)throw Error("No Main Content Elements Found");return Array.from(n).reduce((function(t,e){return e.offsetHeight>t.offsetHeight?e:t}))||document.body},n.prototype._getElementsFromDynamicAdEntry=function(t,e){var n=this;void 0===e&&(e=document);var i=this._getLongestArticleTag(e),o=i?[i]:[],r=[];t.forEach((function(t){var i=Array.from(n.getElements(t.elementSelector,e)).slice(0,t.skip);n._getSelectors(t.elementSelector).forEach((function(a){for(var l=e.querySelectorAll(a),s=function(e){var a=l[e];if(n._adInjectionMap.map.some((function(t){return t.el.isEqualNode(a)})))return"continue";var s=a&&a.parentElement;s&&s!==document.body?o.push(s):o.push(a),-1===i.indexOf(a)&&r.push({dynamicAd:t,element:a})},c=0;c<l.length;c++)s(c)}))}));var a=this._getContainerDivTop(e);return this._totalAvailableElements=r.sort((function(t,e){return t.element.getBoundingClientRect().top-a-(e.element.getBoundingClientRect().top-a)})),o},n.prototype._getContainerDivTop=function(t){return void 0===t&&(t=document),(t===document?document.body:t).getBoundingClientRect().top},n.prototype._getLongestArticleTag=function(t){void 0===t&&(t=document);var e=t.querySelectorAll("article");if(0===e.length)return null;var n=Array.from(e).reduce((function(t,e){return e.offsetHeight>t.offsetHeight?e:t}));return n&&n.offsetHeight>1.5*window.innerHeight?n:null},n.prototype._getSelectors=function(t){return t.includes(",")?t.split(","):[t]},n.prototype._getElementCoords=function(t,e){void 0===e&&(e=!1);var n=t.getBoundingClientRect();return(e?n.top:n.bottom)+window.scrollY},n.prototype._addContentAd=function(t,e,n){void 0===n&&(n=document);var i=null,o="adthrive-".concat(e.location.replace("_","-").toLowerCase()),r="".concat(o,"-").concat(e.sequence),s=this.addAd(t,this.getDynamicElementId(e),e.position,l([o,r],a(e.classNames),!1));if(s){var c=A(e,s);if(c.length)s.style.minHeight=this.locationToMinHeight[e.location],i={clsDynamicAd:e,dynamicAd:e,element:s,sizes:c,name:"".concat(e.location,"_").concat(e.sequence),infinite:n!==document}}return i},n.prototype.getDynamicElementId=function(t){return"".concat("AdThrive","_").concat(t.location,"_").concat(t.sequence,"_").concat(this._device)},n.prototype.getElements=function(t,e){return void 0===e&&(e=document),e.querySelectorAll(t)},n.prototype.addAd=function(t,e,n,i){if(void 0===i&&(i=[]),!document.getElementById(e)){var o='<div id="'.concat(e,'" class="adthrive-ad ').concat(i.join(" "),'"></div>');t.insertAdjacentHTML(n,o)}return document.getElementById(e)},n.prototype._repeatDynamicAds=function(e){for(var n=[],i=e.lazy?t(this.locationMaxLazySequence.get(e.location),0):0,r=e.max,a=e.lazyMax,l=0===i&&e.lazy?r+a:Math.min(Math.max(i-e.sequence+1,0),r+a),s=Math.max(r,l),c=0;c<s;c++){var d=Number(e.sequence)+c,u=e.lazy&&c>=r;n.push(o(o({},e),{sequence:d,lazy:u}))}return n},n.prototype._locationEnabled=function(t){var e=this._clsOptions.enabledLocations.includes(t.location),n=this._clsOptions.disableAds&&this._clsOptions.disableAds.all||document.body.classList.contains("adthrive-disable-all"),i=!document.body.classList.contains("adthrive-disable-content")&&!this._clsOptions.disableAds.reasons.has("content_plugin");return e&&!n&&i},n}();!function(t){t.Video_Collapse_Autoplay_SoundOff="Video_Collapse_Autoplay_SoundOff",t.Video_Individual_Autoplay_SOff="Video_Individual_Autoplay_SOff",t.Video_Coll_SOff_Smartphone="Video_Coll_SOff_Smartphone",t.Video_In_Post_ClicktoPlay_SoundOn="Video_In-Post_ClicktoPlay_SoundOn"}(M||(M={})),function(t){t.StickySekindo="stickySekindo",t.StaticSekindo="staticSekindo",t.None="none"}(C||(C={}));var j,x=function(t){function e(){var e=t.call(this)||this;return e.key="sekho",e._result=!1,e._choices=[{choice:!0},{choice:!1}],e._result=e.run(),e.setExperimentKey(),e}return i(e,t),Object.defineProperty(e.prototype,"result",{get:function(){return this._result},enumerable:!1,configurable:!0}),e.prototype.run=function(){return new m(.05).get()},e}(_),R=function(t){function e(e,n){var i=t.call(this,e,(new x).result,"ClsVideoInsertion")||this;return i._videoConfig=e,i._clsOptions=n,i._IN_POST_SELECTOR=".adthrive-video-player",i._WRAPPER_BAR_HEIGHT=36,i._playersAddedFromPlugin=[],i}return i(e,t),e.prototype.init=function(){this._initializePlayers()},e.prototype._wrapJWPlayerWithCLS=function(t,e,n){if(void 0===n&&(n=0),t.parentNode){var i=t.offsetWidth*(9/16),o=this._createGenericCLSWrapper(i,e,n);t.parentNode.insertBefore(o,t),o.appendChild(t)}},e.prototype._createSekindoCLSWrapper=function(t,e){var n=this._getTitleHeight(document.createElement("h4"));return this._createGenericCLSWrapper(t,e,n)},e.prototype._createGenericCLSWrapper=function(t,e,n){var i=document.createElement("div");return i.id="cls-video-container-".concat(e),i.className="adthrive",i.style.minHeight="".concat(t+n,"px"),i},e.prototype._getTitleHeight=function(t){t.innerText="Title",t.style.visibility="hidden",document.body.appendChild(t);var e=window.getComputedStyle(t),n=parseInt(e.height,10),i=parseInt(e.marginTop,10),o=parseInt(e.marginBottom,10);return document.body.removeChild(t),Math.min(n+o+i,50)},e.prototype._initializePlayers=function(){var t=document.querySelectorAll(this._IN_POST_SELECTOR);t.length&&this._initializeRelatedPlayers(t),this._shouldRunAutoplayPlayers()&&this._determineAutoplayPlayers()},e.prototype._createStationaryRelatedPlayer=function(t,e){this._device,M.Video_In_Post_ClicktoPlay_SoundOn,e&&t.mediaId&&(this._wrapJWPlayerWithCLS(e,t.mediaId),this._playersAddedFromPlugin.push(t.mediaId))},e.prototype._createStickyRelatedPlayer=function(t,e){if(this._device,M.Video_Individual_Autoplay_SOff,this._stickyRelatedOnPage=!0,this._videoConfig.mobileStickyPlayerOnPage="mobile"===this._device,e&&t.position&&t.mediaId){var n=document.createElement("div");e.insertAdjacentElement(t.position,n);var i=document.createElement("h3");i.style.margin="10px 0";var o=this._getTitleHeight(i);this._wrapJWPlayerWithCLS(n,t.mediaId,this._WRAPPER_BAR_HEIGHT+o),this._playersAddedFromPlugin.push(t.mediaId)}},e.prototype._createSekindoPlayer=function(t,e){var n=t.playlistId;o(o({},t),{classNames:[]});var i="mobile"===this._device?{width:340,height:260}:{width:320,height:250},r=this._createSekindoCLSWrapper(i.height,n);e.insertAdjacentElement(t.position,r),this._playersAddedFromPlugin.push(n)},e.prototype._createPlaylistPlayer=function(t,e){var n=t.playlistId;this._videoConfig.mobileStickyPlayerOnPage=!0;var i=document.createElement("div");e.insertAdjacentElement(t.position,i),this._wrapJWPlayerWithCLS(i,n,this._WRAPPER_BAR_HEIGHT),this._playersAddedFromPlugin.push("playlist-".concat(n))},e.prototype._isVideoAllowedOnPage=function(){var t=this._clsOptions.disableAds;return t&&t.video?(t.reasons.has("video_tag")||t.reasons.has("video_plugin")||t.reasons.has("video_page"),!1):!this._clsOptions.videoDisabledFromPlugin},e}(function(t){function e(e,n,i){var o=t.call(this)||this;o._videoConfig=e,o._component=i,o._stickyRelatedOnPage=!1,o._contextualMediaIds=[];var r=o._videoConfig.players||[];o._device=c()?"desktop":"mobile",o._potentialPlayerMap=o._setPotentialPlayerMap(n);var a=r.filter((function(t){return"stationaryRelated"===t.type&&t.enabled}));return o._potentialPlayerMap.stationaryRelated=a,o}return i(e,t),e.prototype._setPotentialPlayerMap=function(t){var e=this,n=this._videoConfig.players,i={stickyRelated:[],stickyPlaylist:[],sekindo:[],stationaryRelated:[]};return n&&n.length?n.filter((function(t){var n;return null===(n=t.devices)||void 0===n?void 0:n.includes(e._device)})).reduce((function(n,i){return n[i.type]||(v.event(e._component,"constructor","Unknown Video Player Type detected",i.type),n[i.type]=[]),i.enabled&&(t&&"sekindo"===i.type||n[i.type].push(i)),n}),i):i},e.prototype._checkPlayerSelectorOnPage=function(t){var e=this,n=this._potentialPlayerMap[t].map((function(t){return{player:t,playerElement:e._getPlacementElement(t)}}));return n.length?n[0]:{player:null,playerElement:null}},e.prototype._getOverrideElement=function(t,e,n){if(t&&e){var i=document.createElement("div");e.insertAdjacentElement(t.position,i),n=i}else{var o=this._checkPlayerSelectorOnPage("stickyPlaylist"),r=o.player,a=o.playerElement;if(r&&a){i=document.createElement("div");a.insertAdjacentElement(r.position,i),n=i}}return n},e.prototype._shouldOverrideElement=function(t){var e=t.getAttribute("override-embed");return"true"===e||"false"===e?"true"===e:!!this._videoConfig.contextualSettings&&this._videoConfig.contextualSettings.overrideEmbedLocation},e.prototype._getPlacementElement=function(t){var e=u(t.pageSelector),n=d(t.elementSelector);return e.valid?t.pageSelector&&!e.elements.length?(v.event("VideoUtils","getPlacementElement",new Error("PSNF: ".concat(t.pageSelector," does not exist on the page"))),null):n.valid?n.elements.length>t.skip?n.elements[t.skip]:(v.event("VideoUtils","getPlacementElement",new Error("ESNF: ".concat(t.elementSelector," does not exist on the page"))),null):null:null},e.prototype._getEmbeddedPlayerType=function(t){var e=t.getAttribute("data-player-type");return e&&"default"!==e||(e=this._videoConfig.contextualSettings?this._videoConfig.contextualSettings.defaultPlayerType:"static"),this._stickyRelatedOnPage&&(e="static"),e},e.prototype._getUnusedMediaId=function(t){var e=t.getAttribute("data-video-id");return!(!e||this._contextualMediaIds.includes(e))&&(this._contextualMediaIds.push(e),e)},e.prototype._createRelatedPlayer=function(t,e,n){"collapse"===e?this._createCollapsePlayer(t,n):"static"===e&&this._createStaticPlayer(t,n)},e.prototype._createCollapsePlayer=function(t,e){var n=this._checkPlayerSelectorOnPage("stickyRelated"),i=n.player,r=n.playerElement,a=i||this._potentialPlayerMap.stationaryRelated[0];a&&a.playerId&&(this._shouldOverrideElement(e)&&(e=this._getOverrideElement(i,r,e)),e=document.querySelector("#cls-video-container-".concat(t," > div"))||e,this._createStickyRelatedPlayer(o(o({},a),{mediaId:t}),e))},e.prototype._createStaticPlayer=function(t,e){if(this._potentialPlayerMap.stationaryRelated.length&&this._potentialPlayerMap.stationaryRelated[0].playerId){var n=this._potentialPlayerMap.stationaryRelated[0];this._createStationaryRelatedPlayer(o(o({},n),{mediaId:t}),e)}},e.prototype._shouldRunAutoplayPlayers=function(){return!(!this._isVideoAllowedOnPage()||!(this._potentialPlayerMap.stickyRelated.length||this._potentialPlayerMap.stickyPlaylist.length||this._potentialPlayerMap.sekindo.length))},e.prototype._determineAutoplayPlayers=function(){var t=this._component,e="VideoManagerComponent"===t,n=this._config;if(this._stickyRelatedOnPage)v.event(t,"stickyRelatedOnPage",e&&{device:n&&n.context.device,isDesktop:this._device}||{});else{var i=this._checkPlayerSelectorOnPage("stickyPlaylist"),o=i.player,r=i.playerElement,a=this._checkPlayerSelectorOnPage("sekindo"),l=a.player,s=a.playerElement;o&&o.playerId&&o.playlistId&&r?this._createPlaylistPlayer(o,r):l&&l.playlistId&&s?this._createSekindoPlayer(l,s):v.event(t,"noStickyPlaylistOrSekindo",e&&{vendor:"none",device:n&&n.context.device,isDesktop:this._device}||{})}},e.prototype._initializeRelatedPlayers=function(t){for(var e=0;e<t.length;e++){var n=t[e],i=this._getEmbeddedPlayerType(n),o=this._getUnusedMediaId(n);o&&this._createRelatedPlayer(o,i,n)}},e}(function(){function t(){}return Object.defineProperty(t.prototype,"enabled",{get:function(){return!0},enumerable:!1,configurable:!0}),t}())),T=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return i(e,t),e}(function(){function t(){this._map=[]}return t.prototype.add=function(t,e,n,i){void 0===i&&(i=document),this._map.push({el:t,coords:e,dynamicAd:n,target:i})},Object.defineProperty(t.prototype,"map",{get:function(){return this._map},enumerable:!1,configurable:!0}),t.prototype.sort=function(){this._map.sort((function(t,e){return t.coords-e.coords}))},t.prototype.filterUsed=function(){this._map=this._map.filter((function(t){return!t.dynamicAd.used}))},t}());(j=new p)&&j.enabled&&(new I(j,new T).start(),new R(new f(j),j).init())}();
+</script><script data-no-optimize="1" data-cfasync="false">(function () {var clsElements = document.querySelectorAll("script[id^='cls-']"); window.adthriveCLS && clsElements && clsElements.length === 0 ? window.adthriveCLS.injectedFromPlugin = false : ""; })();</script><div class='offline-indicator offline-indicator--bottom' style='background-color: #000000'><p style='color:#ffffff'>Looks like you&#039;re offline!</p></div><script type='text/javascript' id='mkaz-code-syntax-prism-js-js-extra'>
+/* <![CDATA[ */
+var prism_settings = {"pluginUrl":"https:\/\/adamtheautomator.com\/wp-content\/plugins\/code-syntax-block\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/plugins/code-syntax-block/assets/prism/prism.js?ver=1657131047' id='mkaz-code-syntax-prism-js-js' defer></script>
+<script type='text/javascript' id='mkaz-code-syntax-prism-js-js-after'>
+!function(){if("undefined"!=typeof Prism&&"undefined"!=typeof document){var i=[],l={},d=function(){};Prism.plugins.toolbar={};var e=Prism.plugins.toolbar.registerButton=function(e,n){var t;t="function"==typeof n?n:function(e){var t;return"function"==typeof n.onClick?((t=document.createElement("button")).type="button",t.addEventListener("click",function(){n.onClick.call(this,e)})):"string"==typeof n.url?(t=document.createElement("a")).href=n.url:t=document.createElement("span"),n.className&&t.classList.add(n.className),t.textContent=n.text,t},e in l?console.warn('There is a button with the key "'+e+'" registered already.'):i.push(l[e]=t)},t=Prism.plugins.toolbar.hook=function(a){var e=a.element.parentNode;if(e&&/pre/i.test(e.nodeName)&&!e.parentNode.classList.contains("code-toolbar")){var t=document.createElement("div");t.classList.add("code-toolbar"),e.parentNode.insertBefore(t,e),t.appendChild(e);var r=document.createElement("div");r.classList.add("toolbar");var n=i,o=function(e){for(;e;){var t=e.getAttribute("data-toolbar-order");if(null!=t)return(t=t.trim()).length?t.split(/\s*,\s*/g):[];e=e.parentElement}}(a.element);o&&(n=o.map(function(e){return l[e]||d})),n.forEach(function(e){var t=e(a);if(t){var n=document.createElement("div");n.classList.add("toolbar-item"),n.appendChild(t),r.appendChild(n)}}),t.appendChild(r)}};e("label",function(e){var t=e.element.parentNode;if(t&&/pre/i.test(t.nodeName)&&t.hasAttribute("data-label")){var n,a,r=t.getAttribute("data-label");try{a=document.querySelector("template#"+r)}catch(e){}return a?n=a.content:(t.hasAttribute("data-url")?(n=document.createElement("a")).href=t.getAttribute("data-url"):n=document.createElement("span"),n.textContent=r),n}}),Prism.hooks.add("complete",t)}}();!function(){function u(t,e){t.addEventListener("click",function(){!function(t){navigator.clipboard?navigator.clipboard.writeText(t.getText()).then(t.success,function(){o(t)}):o(t)}(e)})}function o(e){var t=document.createElement("textarea");t.value=e.getText(),t.style.top="0",t.style.left="0",t.style.position="fixed",document.body.appendChild(t),t.focus(),t.select();try{var o=document.execCommand("copy");setTimeout(function(){o?e.success():e.error()},1)}catch(t){setTimeout(function(){e.error(t)},1)}document.body.removeChild(t)}"undefined"!=typeof Prism&&"undefined"!=typeof document&&(Prism.plugins.toolbar?Prism.plugins.toolbar.registerButton("copy-to-clipboard",function(t){var e=t.element,o=function(t){var e={copy:"Copy","copy-error":"Press Ctrl+C to copy","copy-success":"Copied!","copy-timeout":5e3};for(var o in e){for(var n="data-prismjs-"+o,c=t;c&&!c.hasAttribute(n);)c=c.parentElement;c&&(e[o]=c.getAttribute(n))}return e}(e),n=document.createElement("button");n.className="copy-to-clipboard-button",n.setAttribute("type","button");var c=document.createElement("span");return n.appendChild(c),i("copy"),u(n,{getText:function(){return e.textContent},success:function(){i("copy-success"),r()},error:function(){i("copy-error"),setTimeout(function(){!function(t){window.getSelection().selectAllChildren(t)}(e)},1),r()}}),n;function r(){setTimeout(function(){i("copy")},o["copy-timeout"])}function i(t){c.textContent=o[t],n.setAttribute("data-copy-state",t)}}):console.warn("Copy to Clipboard plugin loaded before Toolbar plugin."))}();
+</script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/plugins/progressive-wp/assets/scripts/ui-offline.js?ver=2.1.13' id='pwp-offline-script-js' defer></script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/plugins/progressive-wp/assets/scripts/ui-installprompt.js?ver=2.1.13' id='pwp-installprompt-script-js' defer></script>
+<script type='text/javascript' id='mailchimp-top-bar-js-extra'>
+/* <![CDATA[ */
+var mctb = {"cookieLength":"365","icons":{"hide":"&#x25B2;","show":"&#x25BC;"},"position":"top","state":{"submitted":false,"success":false}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/plugins/mailchimp-top-bar/assets/js/script.js?ver=1.5.5' id='mailchimp-top-bar-js' defer></script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js' defer></script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?ver=2.2.0' id='jquery-smooth-scroll-js' defer></script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/js.cookie.min.js?ver=2.2.1' id='js-cookie-js' defer></script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?ver=1.9.2' id='jquery-sticky-kit-js' defer></script>
+<script type='text/javascript' id='ez-toc-js-js-extra'>
+/* <![CDATA[ */
+var ezTOC = {"smooth_scroll":"1","scroll_offset":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://adamtheautomator.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=2.0.31.1-1659544344' id='ez-toc-js-js' defer></script>
+<script src='https://stats.wp.com/e-202232.js' defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:11.2',blog:'186782181',post:'15420',tz:'-5',srv:'adamtheautomator.com'} ]);
+	_stq.push([ 'clickTrackerInit', '186782181', '15420' ]);
+</script>
+<script>!function(){"use strict";!function(e){if(-1===e.cookie.indexOf("__adblocker")){e.cookie="__adblocker=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";var t=new XMLHttpRequest;t.open("GET","https://www.npttech.com/advertising.js",!0),t.onreadystatechange=function(){if(XMLHttpRequest.DONE===t.readyState)if(200===t.status){var n=e.createElement("script");n.innerHTML=t.responseText,e.getElementsByTagName("head")[0].appendChild(n)}else{var a=new Date;a.setTime(a.getTime()+3e5),e.cookie="__adblocker=true; expires="+a.toUTCString()+"; path=/"}},t.send()}}(document)}();
+</script><script>!function(){"use strict";var e;e=document,function(){var t,n;function r(){var t=e.createElement("script");t.src="https://cafemedia-com.videoplayerhub.com/galleryplayer.js",e.head.appendChild(t)}function a(){var t=e.cookie.match("(^|[^;]+)\\s*__adblocker\\s*=\\s*([^;]+)");return t&&t.pop()}function c(){clearInterval(n)}return{init:function(){var e;"true"===(t=a())?r():(e=0,n=setInterval((function(){100!==e&&"false"!==t||c(),"true"===t&&(r(),c()),t=a(),e++}),50))}}}().init()}();
+</script><!--  -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"73aa3ba76ee29dcc","token":"99e66a6ed30b42709a6a67d3f7f557ba","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
